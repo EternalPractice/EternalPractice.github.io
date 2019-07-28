@@ -1,4 +1,9 @@
 // @ts-check
+
+// TODO: Add template strings to Specialization page.
+// TODO: Export data into JSON file for Specialization page.
+// TODO:
+
 const homeHTML = `
 <h1 class="center">Hello World!</h1>
 <p>This is a work in progress for my upcoming RPG system.</p>
@@ -35,12 +40,59 @@ const specializationsHTML = `
       <li>Other Example 7</li>
       <li>Other Example 8</li>
       <li>Other Example 9</li>
-      <li>Other Example 10</li>
     </ul>
   </div>
   
   <div class="col-2">
     <h1 class="center">Specializations</h1>
+    <h2 class="center">Archery</h2>
+
+    <p>Archery involves using a bow</p>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>Combat</th>
+        <th>Exploration</th>
+        <th>Interaction</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>example</td>
+        <td>example</td>
+        <td>example</td>
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        <td>example</td>
+        <td>example</td>
+        <td>example</td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td>example</td>
+        <td>example</td>
+        <td>example</td>
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        <td>example</td>
+        <td>example</td>
+        <td>example</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>example</td>
+        <td>example</td>
+        <td>example</td>
+      </tr>
+    </table>
+
   </div>
 
 </div>

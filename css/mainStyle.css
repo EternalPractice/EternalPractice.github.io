@@ -42,6 +42,11 @@ article {
   grid-area: article;
   justify-self: center;
   align-self: center;
+  text-align: center;
+}
+
+article p {
+  margin: auto 0;
 }
 
 footer {
@@ -74,17 +79,42 @@ footer a {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  /* grid-template-areas: "left" "right"; */
 }
 
 .twoColumnPage .col-1 {
   background-color: rgb(20, 20, 20);
 }
+.twoColumnPage .col-1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.twoColumnPage .col-1 li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .twoColumnPage .col-1 li:nth-child(odd) {
-  background-color: rgb(30, 30, 30);
+  background-color: #102533;
+}
+
+.twoColumnPage .col-1 li:nth-child(even) {
+  background-color: #204761;
 }
 
 .twoColumnPage .col-2 {
   /* grid-area: right; */
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #2d1470;
+}
+
+td {
+  border: 1px solid #3782b4;
 }
