@@ -1,0 +1,69 @@
+body {
+  background: rgb(10, 10, 10); /* Creates horizontal black bars */
+}
+
+main {
+  height: 100vh;
+  max-width: 2200px; /* Centers content on ultrawide screens */
+  margin: 0 auto;
+
+  /* Color matches my vs code setup */
+  background: rgb(30, 30, 30);
+  color: rgb(204, 204, 204);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 50fr 1fr;
+  grid-template-areas:
+    'header'
+    'article'
+    'footer';
+}
+
+header {
+  grid-area: header;
+  background: rgb(60, 60, 60);
+  display: flex;
+}
+
+header a {
+  padding: 8px 10px;
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+header a:hover {
+  background: rgb(47, 92, 206);
+}
+
+aside {
+  grid-area: aside;
+  border-right: 5px solid white;
+}
+
+article {
+  grid-area: article;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: rgb(23, 45, 100);
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: rgb(204, 204, 204);
+}
+
+.hiddenPage {
+  display: none;
+}
+
+.activePage {
+  background: rgb(23, 45, 100);
+}
