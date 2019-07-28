@@ -36,20 +36,12 @@ header a:hover {
   background: rgb(47, 92, 206);
 }
 
-aside {
-  grid-area: aside;
-  border-right: 5px solid white;
-}
-
 article {
+  height: 100%;
+  width: 100%;
   grid-area: article;
-}
-
-article object {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
+  justify-self: center;
+  align-self: center;
 }
 
 footer {
@@ -67,10 +59,32 @@ footer a {
   color: rgb(204, 204, 204);
 }
 
-.hiddenPage {
-  display: none;
-}
-
 .activePage {
   background: rgb(23, 45, 100);
+}
+
+.center {
+  text-align: center;
+}
+
+.twoColumnPage {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  /* grid-template-areas: "left" "right"; */
+}
+
+.twoColumnPage .col-1 {
+  background-color: rgb(20, 20, 20);
+}
+
+.twoColumnPage .col-1 li:nth-child(odd) {
+  background-color: rgb(30, 30, 30);
+}
+
+.twoColumnPage .col-2 {
+  /* grid-area: right; */
 }
