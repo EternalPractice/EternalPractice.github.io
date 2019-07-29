@@ -2,10 +2,12 @@ import * as data from "../data/specializations.js";
 
 function selectSpecialization(e) {
   activatedSpecialization = e.target.innerHTML;
-  console.log(activatedSpecialization);
+  usingSpecialization = data.specializationData.find(o => o.name == activatedSpecialization);
+  console.log(usingSpecialization);
 }
 
-let activatedSpecialization = "Alchemy";
+let activatedSpecialization = data.specializationData[0].name;
+let usingSpecialization = data.specializationData[0];
 
 // prettier-ignore
 let pageHTML = `
@@ -21,9 +23,9 @@ let pageHTML = `
   
   <div class="col-2">
     <h1 class="center">Specializations</h1>
-    <h2 class="center">Archery</h2>
+    <h2 class="center">${usingSpecialization.name}</h2>
 
-    <p>Archery involves using a bow</p>
+    <p>${usingSpecialization.description}</p>
 
     <table>
       <tr>
