@@ -1,124 +1,28 @@
-// @ts-check
+import * as home from '../pages/home.js';
+import * as attribute from '../pages/attributes.js';
+import * as race from '../pages/races.js';
+import * as rule from '../pages/rules.js';
+import * as specialization from '../pages/specializations.js';
+import * as item from '../pages/items.js';
+import * as footer from '../pages/footer.js';
 
-// TODO: Add template strings to Specialization page.
-// TODO: Export data into JSON file for Specialization page.
-// TODO:
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('MainContent').innerHTML = home.pageHTML;
+  document.getElementById('Footer').innerHTML = footer.pageHTML;
 
-const homeHTML = `
-<h1 class="center">Hello World!</h1>
-<p>This is a work in progress for my upcoming RPG system.</p>
-
-<p>Currently, I'm in the process of getting this site functional before I add content.</p>
-<p>Please check back once content is loaded</p>
-`;
-
-const attributeHTML = `
-<h1 class="center">Attributes</h1>
-`;
-
-const racesHTML = `
-<h1 class="center">Races</h1>
-`;
-
-const rulesHTML = `
-<h1 class="center">Rules</h1>
-`;
-
-const specializationsHTML = `
-
-<div class="twoColumnPage">
-  <div class="col-1">
-    <ul>
-      <li>Archery</li>
-      <li>Blood Magic</li>
-      <li>Other Example 1</li>
-      <li>Other Example 2</li>
-      <li>Other Example 3</li>
-      <li>Other Example 4</li>
-      <li>Other Example 5</li>
-      <li>Other Example 6</li>
-      <li>Other Example 7</li>
-      <li>Other Example 8</li>
-      <li>Other Example 9</li>
-    </ul>
-  </div>
-  
-  <div class="col-2">
-    <h1 class="center">Specializations</h1>
-    <h2 class="center">Archery</h2>
-
-    <p>Archery involves using a bow</p>
-
-    <table>
-      <tr>
-        <th></th>
-        <th>Combat</th>
-        <th>Exploration</th>
-        <th>Interaction</th>
-      </tr>
-
-      <tr>
-        <td>1</td>
-        <td>example</td>
-        <td>example</td>
-        <td>example</td>
-      </tr>
-      
-      <tr>
-        <td>2</td>
-        <td>example</td>
-        <td>example</td>
-        <td>example</td>
-      </tr>
-      
-      <tr>
-        <td>3</td>
-        <td>example</td>
-        <td>example</td>
-        <td>example</td>
-      </tr>
-      
-      <tr>
-        <td>4</td>
-        <td>example</td>
-        <td>example</td>
-        <td>example</td>
-      </tr>
-
-      <tr>
-        <td>5</td>
-        <td>example</td>
-        <td>example</td>
-        <td>example</td>
-      </tr>
-    </table>
-
-  </div>
-
-</div>
-`;
-
-const itemsHTML = `
-<h1 class="center">Weapons & Items</h1>
-`;
-
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("MainContent").innerHTML = homeHTML;
-
-  // Place header links in array, assign click even listeners
-  const links = Array.from(document.querySelectorAll("header a"));
-  links.forEach(link => link.addEventListener("click", highlightActivePage));
-  links.forEach(link => link.addEventListener("click", setMainArticle));
-  const articles = Array.from(document.querySelectorAll("article"));
+  // Place header links in array, assign click event listeners
+  const links = Array.from(document.querySelectorAll('header a'));
+  links.forEach(link => link.addEventListener('click', highlightActivePage));
+  links.forEach(link => link.addEventListener('click', setMainArticle));
 
   function highlightActivePage(e) {
     const activePage = e.target.id;
 
     for (let i = 0; i < links.length; i++) {
       if (activePage === links[i].id) {
-        links[i].classList.add("activePage");
+        links[i].classList.add('activePage');
       } else {
-        links[i].classList.remove("activePage");
+        links[i].classList.remove('activePage');
       }
     }
   }
@@ -127,23 +31,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const activePage = e.target.id;
 
     switch (activePage) {
-      case "Home":
-        document.getElementById("MainContent").innerHTML = homeHTML;
+      case 'Home':
+        document.getElementById('MainContent').innerHTML = home.pageHTML;
         break;
-      case "Attributes":
-        document.getElementById("MainContent").innerHTML = attributeHTML;
+      case 'Attributes':
+        document.getElementById('MainContent').innerHTML = attribute.pageHTML;
         break;
-      case "Races":
-        document.getElementById("MainContent").innerHTML = racesHTML;
+      case 'Races':
+        document.getElementById('MainContent').innerHTML = race.pageHTML;
         break;
-      case "Rules":
-        document.getElementById("MainContent").innerHTML = rulesHTML;
+      case 'Rules':
+        document.getElementById('MainContent').innerHTML = rule.pageHTML;
         break;
-      case "Specializations":
-        document.getElementById("MainContent").innerHTML = specializationsHTML;
+      case 'Specializations':
+        document.getElementById('MainContent').innerHTML = specialization.pageHTML;
         break;
-      case "Weapons-items":
-        document.getElementById("MainContent").innerHTML = itemsHTML;
+      case 'Weapons-items':
+        document.getElementById('MainContent').innerHTML = item.pageHTML;
         break;
     }
   }
