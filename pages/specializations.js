@@ -1,86 +1,19 @@
-let specializationData = [
-  {
-    name: 'Alchemy'
-  },
-  {
-    name: 'Arcane'
-  },
-  {
-    name: 'Archery'
-  },
-  {
-    name: 'Artifice'
-  },
-  {
-    name: 'Bardic Lore'
-  },
-  {
-    name: 'Beast Master'
-  },
-  {
-    name: 'Brute Force'
-  },
-  {
-    name: 'Cavalier'
-  },
-  {
-    name: 'Commander'
-  },
-  {
-    name: 'Dual Wielder'
-  },
-  {
-    name: 'Elements'
-  },
-  {
-    name: 'Faith'
-  },
-  {
-    name: 'Flail Master'
-  },
-  {
-    name: 'Martial Arts'
-  },
-  {
-    name: 'Nature'
-  },
-  {
-    name: 'Occultism'
-  },
-  {
-    name: 'Psionics'
-  },
-  {
-    name: 'Raptor fighting'
-  },
-  {
-    name: 'Savagery / Tavern Brawler'
-  },
-  {
-    name: 'Thievery'
-  },
-  {
-    name: 'Tracking'
-  },
-  {
-    name: 'Shapeshifting'
-  },
-  {
-    name: 'Skulker'
-  },
-  {
-    name: 'Undeath'
-  }
-];
+import * as data from '../data/specializations.js';
+
+function selectSpecialization(e) {
+  console.log(e.target.innerHTML);
+}
+
+let activatedSpecialization = 'Alchemy';
 
 // prettier-ignore
 let pageHTML = `
 <div class="twoColumnPage">
   <div class="col-1">
-    <ul>
-      ${specializationData.map(specialzation => `
-      <li>${specialzation.name}</li>
-      `.trim()).join('')
+    <ul onclick="selectSpecialization(e)">
+      ${data.specializationData.map(specialization => `
+      <li>${specialization.name}</li>
+      `.trim()).sort().join('')
       }
     </ul>
   </div>
