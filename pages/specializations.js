@@ -1,16 +1,17 @@
-import * as data from '../data/specializations.js';
+import * as data from "../data/specializations.js";
 
 function selectSpecialization(e) {
-  console.log(e.target.innerHTML);
+  activatedSpecialization = e.target.innerHTML;
+  console.log(activatedSpecialization);
 }
 
-let activatedSpecialization = 'Alchemy';
+let activatedSpecialization = "Alchemy";
 
 // prettier-ignore
 let pageHTML = `
 <div class="twoColumnPage">
   <div class="col-1">
-    <ul onclick="selectSpecialization(e)">
+  <ul id="SpecializationList">
       ${data.specializationData.map(specialization => `
       <li>${specialization.name}</li>
       `.trim()).sort().join('')
@@ -73,4 +74,4 @@ let pageHTML = `
 </div>
 `;
 
-export { pageHTML };
+export { pageHTML, selectSpecialization };
