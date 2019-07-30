@@ -1,24 +1,25 @@
 import * as data from '../data/specializations.js';
 
-function selectSpecialization(e) {
-  const dummyData = data.specializationData[0];
-  console.log(`Target is type ${e.target.type}`);
+let usingSpecialization = data.specializationData[0];
 
-  return renderHTML(dummyData);
-  // activatedSpecialization = e.target.innerHTML;
-  // usingSpecialization = data.specializationData.find(o => o.name == activatedSpecialization);
+function selectSpecialization(e) {
+  if (e.target.className === 'specialization') {
+    usingSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
+    return renderHTML(usingSpecialization);
+  } else {
+    console.log('Selected link');
+    return renderHTML(usingSpecialization);
+  }
 }
 
-// prettier-ignore
+//prettier-ignore
 function renderHTML(specialization) {
-  console.log(`Inside render, this is the object passed ${specialization.name}`)
-  
-  return  `
+  return `
   <div class="twoColumnPage">
   <div class="col-1">
-  <ul id="SpecializationList">
+  <ul class="SpecializationList">
       ${data.specializationData.map(specialization => `
-      <li>${specialization.name}</li>
+      <li class="specialization">${specialization.name}</li>
       `.trim()).sort().join('')
       }
   </ul>
@@ -79,4 +80,4 @@ function renderHTML(specialization) {
 </div>`;
 }
 
-export { renderHTML, selectSpecialization };
+export { selectSpecialization };

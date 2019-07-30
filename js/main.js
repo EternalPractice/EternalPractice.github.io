@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('Header').addEventListener('click', setCurrentSection);
   document.getElementById('Main').addEventListener('click', setMainArticle);
 
+  function setCurrentSection(e) {
+    pageObject.currentSection = e.target.id;
+
+    highlightActivePage(pageObject.currentSection);
+  }
+
   function highlightActivePage(currentSection) {
     const links = Array.from(document.querySelectorAll('header a'));
 
@@ -33,10 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function setCurrentSection(e) {
-    pageObject.currentSection = e.target.id;
-
-    // TODO = Break this switch statement into a function setMainArticle()
+  function setMainArticle(e) {
     switch (pageObject.currentSection) {
       case 'Home':
         document.getElementById('MainContent').innerHTML = home.pageHTML;
@@ -57,6 +60,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('MainContent').innerHTML = item.pageHTML;
         break;
     }
-    highlightActivePage(pageObject.currentSection);
   }
 });
