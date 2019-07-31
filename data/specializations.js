@@ -19,6 +19,66 @@ let specializationData = [
       },
       {
         level: 1,
+        type: 'Exploration',
+        name: 'Create burn salve',
+        requirements: {
+          Strength: 1,
+          Perception: 1,
+          Intelligence: 1,
+          Specialization: false
+        },
+        details: `Adventurers can use a <em>Craft-Alchemy</em> skill check to create a salve to treat the burn condition.</br>
+        This can be used to remove burn condition based on the table below:`,
+        table: `
+        <table>
+          <tr>
+            <th>Score</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Result</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Result</td>
+          </tr>
+        </table>`
+      },
+      {
+        level: 1,
         type: 'Combat',
         name: 'Throw Vial',
         requirements: {

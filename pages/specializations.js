@@ -7,19 +7,30 @@ function selectSpecialization(e) {
     chosenSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
     return renderHTML(chosenSpecialization);
   } else {
-    console.log('Selected link');
     return renderHTML(chosenSpecialization);
   }
 }
 
-function selectPerk(data, tier, type) {
+function selectPerks(data, tier, type) {
   return data.filter(function(perk) {
     if (perk.level === tier && perk.type === type) {
-      console.clear();
-      console.log(perk);
       return perk;
     }
-  })[0];
+  });
+}
+
+function printPerksToTable(perkArray) {
+  if (perkArray === undefined || perkArray.length == 0) {
+    return `NO PERK YET`;
+  } else if (perkArray.length === 1) {
+    return `<div class="perk">${perkArray[0].name}</div>`;
+  } else {
+    let returnPerks = '';
+    for (var i = 0; i < perkArray.length; i++) {
+      returnPerks += `<div class="perk">${perkArray[i].name}</div>`;
+    }
+    return returnPerks;
+  }
 }
 
 //prettier-ignore
@@ -51,41 +62,37 @@ function renderHTML(specialization) {
 
     <tr>
       <td>1</td>
-      <td>
-      ${(typeof selectPerk(chosenSpecialization.perks, 1, 'Exploration') !== 'undefined') ? `
-      ${selectPerk(chosenSpecialization.perks, 1, 'Exploration').name}` : `
-      NO PERK YET`}
-      </td>
-      <td>example</td>
-      <td>example</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Combat'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Exploration'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Interaction'))}</td>
     </tr>
 
     <tr>
       <td>2</td>
-      <td>example</td>
-      <td>example</td>
-      <td>example</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Combat'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Exploration'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Interaction'))}</td>
     </tr>
 
     <tr>
       <td>3</td>
-      <td>example</td>
-      <td>example</td>
-      <td>example</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Combat'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Exploration'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Interaction'))}</td>
     </tr>
 
     <tr>
       <td>4</td>
-      <td>example</td>
-      <td>example</td>
-      <td>example</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Combat'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Exploration'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Interaction'))}</td>
     </tr>
 
     <tr>
        <td>5</td>
-       <td>example</td>
-       <td>example</td>
-       <td>example</td>
+       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Combat'))}</td>
+       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Exploration'))}</td>
+       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Interaction'))}</td>
      </tr>
   </table>
 

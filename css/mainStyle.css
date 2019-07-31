@@ -15,9 +15,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 50fr 1fr;
   grid-template-areas:
-    "header"
-    "article"
-    "footer";
+    'header'
+    'article'
+    'footer';
 }
 
 header {
