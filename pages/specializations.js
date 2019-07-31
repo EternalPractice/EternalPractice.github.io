@@ -1,15 +1,25 @@
 import * as data from '../data/specializations.js';
 
-let usingSpecialization = data.specializationData[0];
+let chosenSpecialization = data.specializationData[0];
 
 function selectSpecialization(e) {
   if (e.target.className === 'specialization') {
-    usingSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
-    return renderHTML(usingSpecialization);
+    chosenSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
+    return renderHTML(chosenSpecialization);
   } else {
     console.log('Selected link');
-    return renderHTML(usingSpecialization);
+    return renderHTML(chosenSpecialization);
   }
+}
+
+function selectPerk(data, tier, type) {
+  return data.filter(function(perk) {
+    if (perk.level === tier && perk.type === type) {
+      console.clear();
+      console.log(perk);
+      return perk;
+    }
+  })[0];
 }
 
 //prettier-ignore
@@ -41,7 +51,11 @@ function renderHTML(specialization) {
 
     <tr>
       <td>1</td>
-      <td>example</td>
+      <td>
+      ${(typeof selectPerk(chosenSpecialization.perks, 1, 'Exploration') !== 'undefined') ? `
+      ${selectPerk(chosenSpecialization.perks, 1, 'Exploration').name}` : `
+      NO PERK YET`}
+      </td>
       <td>example</td>
       <td>example</td>
     </tr>
