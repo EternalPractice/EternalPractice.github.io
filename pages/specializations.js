@@ -1,12 +1,12 @@
-import * as data from '../data/specializations.js';
+import * as data from "../data/specializations.js";
 
 let chosenSpecialization = data.specializationData[0];
 
 function selectSpecialization(e) {
-  if (e.target.className === 'specialization') {
+  if (e.target.className === "specialization") {
     chosenSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
     return renderHTML(chosenSpecialization);
-  } else if (e.target.className === 'perk') {
+  } else if (e.target.className === "perk") {
     let chosenPerk = chosenSpecialization.perks.find(p => p.name == e.target.innerHTML);
 
     return `
@@ -34,7 +34,7 @@ function printPerksToTable(perkArray) {
   } else if (perkArray.length === 1) {
     return `<div class="perk">${perkArray[0].name}</div>`;
   } else {
-    let returnPerks = '';
+    let returnPerks = "";
     for (var i = 0; i < perkArray.length; i++) {
       returnPerks += `<div class="perk">${perkArray[i].name}</div>`;
     }
@@ -46,7 +46,7 @@ function displayPerk(perk) {
   let returnString = `<div class="perk-info">`;
 
   for (const prop in perk) {
-    if (typeof perk[prop] === 'object') {
+    if (typeof perk[prop] === "object") {
       returnString += `<div class="perk-${prop}">`;
       for (const innerProp in perk[prop]) {
         returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${
@@ -64,7 +64,7 @@ function displayPerk(perk) {
 
 //prettier-ignore
 function renderHTML(specialization) {
-  return `
+  let returnHTML =  `
   <div class="twoColumnPage">
     <div class="col-1">
      <ul class="SpecializationList">
@@ -88,46 +88,23 @@ function renderHTML(specialization) {
       <th>Exploration</th>
       <th>Interaction</th>
     </tr>
+`;
 
-    <tr>
-      <td>1</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Combat'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Exploration'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 1, 'Interaction'))}</td>
-    </tr>
-
-    <tr>
-      <td>2</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Combat'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Exploration'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 2, 'Interaction'))}</td>
-    </tr>
-
-    <tr>
-      <td>3</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Combat'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Exploration'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 3, 'Interaction'))}</td>
-    </tr>
-
-    <tr>
-      <td>4</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Combat'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Exploration'))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 4, 'Interaction'))}</td>
-    </tr>
-
-    <tr>
-       <td>5</td>
-       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Combat'))}</td>
-       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Exploration'))}</td>
-       <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, 5, 'Interaction'))}</td>
-     </tr>
+for (let i = 1; i < 6; i++){
+  returnHTML += `
+  <tr>
+    <td>${i}</td>
+    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Combat'))}</td>
+    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Exploration'))}</td>
+    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Interaction'))}</td>
+  </tr>`;
+}
+returnHTML += `
   </table>
+  </div>
+  </div>`;
 
-</div>
-
-</div>`;
+  return returnHTML;
 }
 
 export { selectSpecialization };
