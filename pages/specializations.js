@@ -66,14 +66,14 @@ function displayPerk(perk) {
 function renderHTML(specialization) {
   return `
   <div class="twoColumnPage">
-  <div class="col-1">
-  <ul class="SpecializationList">
+    <div class="col-1">
+     <ul class="SpecializationList">
       ${data.specializationData.map(specialization => `
       <li class="specialization">${specialization.name}</li>
       `.trim()).sort().join('')
       }
-  </ul>
-</div>
+      </ul>
+    </div>
 
 <div class="col-2">
   <h1 class="center">Specializations</h1>
