@@ -9,11 +9,12 @@ let specializationData = [
         level: 1,
         type: 'Exploration',
         name: 'Identify Ingredient',
+        AP: 3,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `Adventurers can use a <em>Craft-Alchemy</em> skill check to inspect an ingredient and get information about it.`
       },
@@ -21,11 +22,12 @@ let specializationData = [
         level: 1,
         type: 'Exploration',
         name: 'Create burn salve',
+        AP: 10,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `Adventurers can use a <em>Craft-Alchemy</em> skill check to create a salve to treat the burn condition.</br>
         This can be used to remove burn condition based on the table below:`,
@@ -81,11 +83,12 @@ let specializationData = [
         level: 1,
         type: 'Combat',
         name: 'Throw Vial',
+        AP: 2,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `Adventurers can use a <em>1-Handed Ranged</em> skill check to throw a vial at a target.</br>
           This can be used to either heal an ally without getting close, or applying a poison from afar.`
@@ -94,14 +97,29 @@ let specializationData = [
         level: 1,
         type: 'Interaction',
         name: 'Perfume',
+        AP: 100,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `You can create a perfume that gives you a bonus to <em>persuasion</em> checks equal to the victory score on a successful <em>Craft-Alchemy</em> check.</br>
         This bonus lasts for 1-hour upon applying the perfume.`
+      },
+      {
+        level: 2,
+        type: 'Exploration',
+        name: 'Craft Basic Potion',
+        AP: 100,
+        requirements: {
+          strength: 1,
+          perception: 1,
+          intelligence: 3,
+          specialization: false
+        },
+        details: `Adventurers can use a <em>Craft-Alchemy</em> skill check to create a basic potion (see items section).<br>
+            It's potentcy is equal to the victory score.`
       }
     ]
   },
@@ -113,11 +131,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -131,11 +150,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -149,11 +169,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -167,11 +188,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -185,11 +207,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -203,11 +226,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -221,11 +245,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -239,11 +264,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -257,11 +283,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -275,11 +302,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -293,11 +321,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -311,11 +340,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -329,11 +359,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -347,11 +378,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -365,11 +397,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -383,11 +416,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -401,11 +435,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -419,11 +454,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -438,10 +474,11 @@ let specializationData = [
         type: 'Exploration',
         name: '<place holder>',
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          AP: 0,
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -455,11 +492,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -473,11 +511,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -491,11 +530,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -509,11 +549,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }
@@ -527,11 +568,12 @@ let specializationData = [
         level: 0,
         type: 'Exploration',
         name: '<place holder>',
+        AP: 0,
         requirements: {
-          Strength: 1,
-          Perception: 1,
-          Intelligence: 1,
-          Specialization: false
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
         },
         details: `<place holder>`
       }

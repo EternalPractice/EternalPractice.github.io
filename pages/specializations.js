@@ -6,17 +6,26 @@ function selectSpecialization(e) {
   if (e.target.className === 'specialization') {
     chosenSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
     return renderHTML(chosenSpecialization);
+  } else if (e.target.className === 'perk') {
+    let chosenPerk = chosenSpecialization.perks.find(p => p.name == e.target.innerHTML);
+
+    return `
+    ${renderHTML(chosenSpecialization)}
+    ${displayPerk(chosenPerk)}
+    `;
   } else {
     return renderHTML(chosenSpecialization);
   }
 }
 
 function selectPerks(data, tier, type) {
-  return data.filter(function(perk) {
-    if (perk.level === tier && perk.type === type) {
-      return perk;
-    }
-  });
+  return data
+    .filter(function(perk) {
+      if (perk.level === tier && perk.type === type) {
+        return perk;
+      }
+    })
+    .sort();
 }
 
 function printPerksToTable(perkArray) {
@@ -31,6 +40,26 @@ function printPerksToTable(perkArray) {
     }
     return returnPerks;
   }
+}
+
+function displayPerk(perk) {
+  let returnString = `<div class="perk-info">`;
+
+  for (const prop in perk) {
+    if (typeof perk[prop] === 'object') {
+      returnString += `<div class="perk-${prop}">`;
+      for (const innerProp in perk[prop]) {
+        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${
+          perk[prop][innerProp]
+        }</div>`;
+      }
+      returnString += `</div>`;
+    } else {
+      returnString += `<div class="perk-${prop}">${prop} = ${perk[prop]}</div>`;
+    }
+  }
+  returnString += `</div>`;
+  return returnString;
 }
 
 //prettier-ignore

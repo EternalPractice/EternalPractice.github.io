@@ -118,3 +118,8 @@ th {
 td {
   border: 1px solid #3782b4;
 }
+
+.perk-info {
+  background-color: aliceblue;
+  color: black;
+}
