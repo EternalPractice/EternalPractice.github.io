@@ -1,14 +1,14 @@
 let specializationData = [
   {
-    name: 'Alchemy',
+    name: "Alchemy",
     description: `Alchemy is the study of potions and their ingredients.</br>
     Alchemists tend to make concoctions to solve their problems.</br>
     I'm tired, so this is as far as I will write.`,
     perks: [
       {
         level: 1,
-        type: 'Exploration',
-        name: 'Identify Ingredient',
+        type: "Exploration",
+        name: "Identify Ingredient",
         AP: 3,
         requirements: {
           strength: 1,
@@ -20,8 +20,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Exploration',
-        name: 'Create burn salve',
+        type: "Exploration",
+        name: "Create burn salve",
         AP: 10,
         requirements: {
           strength: 1,
@@ -31,58 +31,53 @@ let specializationData = [
         },
         details: `Adventurers can use a <em>Craft-Alchemy</em> skill check to create a salve to treat the burn condition.</br>
         This can be used to remove burn condition based on the table below:`,
-        table: `
-        <table>
-          <tr>
-            <th>Score</th>
-            <th>Result</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Result</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Result</td>
-          </tr>
-        </table>`
+        table: [
+          {
+            Score: 1,
+            Result: "1"
+          },
+          {
+            Score: 2,
+            Result: "2"
+          },
+          {
+            Score: 3,
+            Result: "3"
+          },
+          {
+            Score: 4,
+            Result: "4"
+          },
+          {
+            Score: 5,
+            Result: "5"
+          },
+          {
+            Score: 6,
+            Result: "6"
+          },
+          {
+            Score: 7,
+            Result: "7"
+          },
+          {
+            Score: 8,
+            Result: "8"
+          },
+          {
+            Score: 9,
+            Result: "9"
+          },
+          {
+            Score: 10,
+            Result: "10"
+          }
+        ]
       },
       {
         level: 1,
-        type: 'Combat',
-        name: 'Throw Vial',
+        type: "Combat",
+        name: "Throw Vial",
         AP: 2,
         requirements: {
           strength: 1,
@@ -95,8 +90,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Interaction',
-        name: 'Perfume',
+        type: "Interaction",
+        name: "Perfume",
         AP: 100,
         requirements: {
           strength: 1,
@@ -109,8 +104,8 @@ let specializationData = [
       },
       {
         level: 2,
-        type: 'Exploration',
-        name: 'Craft Basic Potion',
+        type: "Exploration",
+        name: "Craft Basic Potion",
         AP: 100,
         requirements: {
           strength: 1,
@@ -124,13 +119,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Arcane',
+    name: "Arcane",
     description: `Arcane is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -143,13 +138,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Archery',
+    name: "Archery",
     description: `Archery is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -162,13 +157,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Artifice',
+    name: "Artifice",
     description: `Artifice is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -181,13 +176,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Bardic Lore',
+    name: "Bardic Lore",
     description: `Bardic Lore is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -200,13 +195,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Beast Master',
+    name: "Beast Master",
     description: `Beast Master is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -219,13 +214,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Brute Force',
+    name: "Brute Force",
     description: `Brute Force is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -238,13 +233,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Cavalier',
+    name: "Cavalier",
     description: `Cavalier is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -257,13 +252,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Commander',
+    name: "Commander",
     description: `Commander is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -276,13 +271,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Dual Wielder',
+    name: "Dual Wielder",
     description: `Dual Wielder is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -295,13 +290,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Elements',
+    name: "Elements",
     description: `Elements is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -314,13 +309,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Faith',
+    name: "Faith",
     description: `Faith is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -333,13 +328,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Flail Master',
+    name: "Flail Master",
     description: `Flail Master is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -352,13 +347,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Martial Arts',
+    name: "Martial Arts",
     description: `Martial Arts is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -371,13 +366,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Nature',
+    name: "Nature",
     description: `Nature is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -390,13 +385,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Occultism',
+    name: "Occultism",
     description: `Occultism is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -409,13 +404,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Psionics',
+    name: "Psionics",
     description: `Psionics is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -428,13 +423,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Raptor fighting',
+    name: "Raptor fighting",
     description: `Raptor fighting is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -447,13 +442,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Brawler',
+    name: "Brawler",
     description: `Brawler is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -466,13 +461,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Thievery',
+    name: "Thievery",
     description: `Thievery is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         requirements: {
           AP: 0,
           strength: 1,
@@ -485,13 +480,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Tracking',
+    name: "Tracking",
     description: `Tracking is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -504,13 +499,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Shapeshifting',
+    name: "Shapeshifting",
     description: `Shapeshifting is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -523,13 +518,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Skulker',
+    name: "Skulker",
     description: `Skulker is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -542,13 +537,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Blood Mage',
+    name: "Blood Mage",
     description: `Blood Mage is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -561,13 +556,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Undeath',
+    name: "Undeath",
     description: `Undeath is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,

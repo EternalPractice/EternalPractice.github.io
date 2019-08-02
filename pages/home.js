@@ -4,6 +4,7 @@ let pageHTML = `
 
 <p>Currently, I'm in the process of getting this site functional before I add content.</p>
 <p>Please check back once content is loaded</p>
+<p>Fifth element</p>
 `;
 
 export { pageHTML };

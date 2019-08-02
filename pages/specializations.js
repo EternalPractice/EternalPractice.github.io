@@ -46,12 +46,13 @@ function displayPerk(perk) {
   let returnString = `<div class="perk-info">`;
 
   for (const prop in perk) {
-    if (typeof perk[prop] === "object") {
+    if (Array.isArray(perk[prop])) {
+      console.log("creating perk table");
+      returnString += displayPerkTable(perk[prop]);
+    } else if (typeof perk[prop] === "object") {
       returnString += `<div class="perk-${prop}">`;
       for (const innerProp in perk[prop]) {
-        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${
-          perk[prop][innerProp]
-        }</div>`;
+        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${perk[prop][innerProp]}</div>`;
       }
       returnString += `</div>`;
     } else {
@@ -62,26 +63,48 @@ function displayPerk(perk) {
   return returnString;
 }
 
-//prettier-ignore
+function displayPerkTable(tableArray) {
+  let returnString = `
+    <table class='results-table'>
+      <tr>
+        <th>Score</th>
+        <th>Result</th>
+      </tr>`;
+
+  for (let i = 0; i < tableArray.length; i++) {
+    returnString += `
+    <tr>
+      <td>${tableArray[i].Score}</td>
+      <td>${tableArray[i].Result}</td>
+    </tr>
+    `;
+  }
+
+  returnString += `</table>`;
+  return returnString;
+}
+
 function renderHTML(specialization) {
-  let returnHTML =  `
-  <div class="twoColumnPage">
-    <div class="col-1">
-     <ul class="SpecializationList">
-      ${data.specializationData.map(specialization => `
-      <li class="specialization">${specialization.name}</li>
-      `.trim()).sort().join('')
-      }
+  let returnHTML = `
+
+    <div class="list-of-specializations">
+      <ul class="SpecializationList">
+      ${data.specializationData
+        .map(specialization =>
+          `
+      <li class="specialization">${specialization.name}</li>`.trim()
+        )
+        .sort()
+        .join("")}
       </ul>
     </div>
 
-<div class="col-2">
-  <h1 class="center">Specializations</h1>
+<div class="list-of-perks">
   <h2 class="center">${specialization.name}</h2>
 
   <p>${specialization.description}</p>
 
-  <table>
+  <table class="perk-table">
     <tr>
       <th></th>
       <th>Combat</th>
@@ -90,18 +113,17 @@ function renderHTML(specialization) {
     </tr>
 `;
 
-for (let i = 1; i < 6; i++){
+  for (let i = 1; i < 6; i++) {
+    returnHTML += `
+    <tr>
+      <td>${i}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Combat"))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Exploration"))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Interaction"))}</td>
+    </tr>`;
+  }
   returnHTML += `
-  <tr>
-    <td>${i}</td>
-    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Combat'))}</td>
-    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Exploration'))}</td>
-    <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Interaction'))}</td>
-  </tr>`;
-}
-returnHTML += `
-  </table>
-  </div>
+   </table>
   </div>`;
 
   return returnHTML;

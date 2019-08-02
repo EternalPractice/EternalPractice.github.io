@@ -1,23 +1,9 @@
+/* --------------------------------------------------------
+                MAIN STYLE FOR FRAME
+-------------------------------------------------------- */
+
 body {
   background: rgb(10, 10, 10); /* Creates horizontal black bars */
-}
-
-main {
-  height: 100vh;
-  max-width: 2200px; /* Centers content on ultrawide screens */
-  margin: 0 auto;
-
-  /* Color matches my vs code setup */
-  background: rgb(30, 30, 30);
-  color: rgb(204, 204, 204);
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 50fr 1fr;
-  grid-template-areas:
-    'header'
-    'article'
-    'footer';
 }
 
 header {
@@ -36,16 +22,32 @@ header a:hover {
   background: rgb(47, 92, 206);
 }
 
-article {
-  height: 100%;
-  width: 100%;
-  grid-area: article;
-  place-self: center;
-  text-align: center;
+main {
+  height: 100vh;
+  max-width: 2200px; /* Centers content on ultrawide screens */
+  margin: 0 auto;
+
+  /* Color matches my vs code setup */
+  background: rgb(30, 30, 30);
+  color: rgb(204, 204, 204);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 50fr 1fr;
+  grid-template-areas:
+    "header"
+    "article"
+    "footer";
 }
 
-article p {
-  margin: auto 0;
+article {
+  grid-area: article;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: auto;
 }
 
 footer {
@@ -54,71 +56,72 @@ footer {
   background-color: rgb(23, 45, 100);
 }
 
-footer p {
-  margin: 0;
-  padding: 0;
-}
-
 footer a {
   color: rgb(204, 204, 204);
+}
+
+p {
+  margin: auto 0;
 }
 
 .activePage {
   background: rgb(23, 45, 100);
 }
 
-.center {
-  text-align: center;
-}
+/* --------------------------------------------------------
+                SPECIALIZATIONS PAGE
+-------------------------------------------------------- */
 
-.twoColumnPage {
+.list-of-specializations {
+  grid-area: 1/1/3/1;
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-
-.twoColumnPage .col-1 {
   background-color: rgb(20, 20, 20);
 }
-.twoColumnPage .col-1 ul {
+.list-of-specializations ul {
   list-style: none;
   padding: 0;
 }
 
-.twoColumnPage .col-1 li {
+.list-of-specializations li {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.twoColumnPage .col-1 li:nth-child(odd) {
+.list-of-specializations li:nth-child(odd) {
   background-color: #102533;
 }
 
-.twoColumnPage .col-1 li:nth-child(even) {
+.list-of-specializations li:nth-child(even) {
   background-color: #204761;
 }
 
-.twoColumnPage .col-2 {
-  /* grid-area: right; */
-}
-
-table {
+.list-of-perks {
+  grid-area: 1/2/2/2;
+  height: 100%;
   width: 100%;
-}
-
-th {
-  background-color: #2d1470;
-}
-
-td {
-  border: 1px solid #3782b4;
+  text-align: center;
 }
 
 .perk-info {
+  grid-area: 2/2/3/3;
+  height: 100%;
+  width: 100%;
   background-color: aliceblue;
   color: black;
+}
+
+.perk-table {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.perk-table th {
+  background-color: #2d1470;
+}
+
+.perk-table td {
+  border: 1px solid #3782b4;
 }
