@@ -1,17 +1,17 @@
-import * as data from "../data/specializations.js";
+import * as data from '../data/specializations.js';
 
 let chosenSpecialization = data.specializationData[0];
 
 function selectSpecialization(e) {
-  if (e.target.className === "specialization") {
+  if (e.target.classList.contains('specialization')) {
     chosenSpecialization = data.specializationData.find(o => o.name == e.target.innerHTML);
     return renderHTML(chosenSpecialization);
-  } else if (e.target.className === "perk") {
+  } else if (e.target.classList.contains('perk')) {
     let chosenPerk = chosenSpecialization.perks.find(p => p.name == e.target.innerHTML);
 
     return `
     ${renderHTML(chosenSpecialization)}
-    ${displayPerk(chosenPerk)}
+    ${displayPerkDetails(chosenPerk)}
     `;
   } else {
     return renderHTML(chosenSpecialization);
@@ -32,31 +32,35 @@ function printPerksToTable(perkArray) {
   if (perkArray === undefined || perkArray.length == 0) {
     return `NO PERK YET`;
   } else if (perkArray.length === 1) {
-    return `<div class="perk">${perkArray[0].name}</div>`;
+    return `<div class="perk updatable">${perkArray[0].name}</div>`;
   } else {
-    let returnPerks = "";
+    let returnPerks = '';
     for (var i = 0; i < perkArray.length; i++) {
-      returnPerks += `<div class="perk">${perkArray[i].name}</div>`;
+      returnPerks += `<div class="perk updatable">${perkArray[i].name}</div>`;
     }
     return returnPerks;
   }
 }
 
-function displayPerk(perk) {
-  let returnString = `<div class="perk-info">`;
+function displayPerkDetails(perk) {
+  let returnString = `
+    <div class="perk-info">
+      <div class="perk-name">${perk.name}</div>
+      <div class="perk-AP">AP Cost = ${perk.AP}</div>
+      <div class="perk-details">${perk.details}</div>
+    `;
 
   for (const prop in perk) {
     if (Array.isArray(perk[prop])) {
-      console.log("creating perk table");
       returnString += displayPerkTable(perk[prop]);
-    } else if (typeof perk[prop] === "object") {
+    } else if (typeof perk[prop] === 'object') {
       returnString += `<div class="perk-${prop}">`;
       for (const innerProp in perk[prop]) {
-        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${perk[prop][innerProp]}</div>`;
+        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${
+          perk[prop][innerProp]
+        }</div>`;
       }
       returnString += `</div>`;
-    } else {
-      returnString += `<div class="perk-${prop}">${prop} = ${perk[prop]}</div>`;
     }
   }
   returnString += `</div>`;
@@ -92,10 +96,10 @@ function renderHTML(specialization) {
       ${data.specializationData
         .map(specialization =>
           `
-      <li class="specialization">${specialization.name}</li>`.trim()
+      <li class="specialization updatable">${specialization.name}</li>`.trim()
         )
         .sort()
-        .join("")}
+        .join('')}
       </ul>
     </div>
 
@@ -117,9 +121,9 @@ function renderHTML(specialization) {
     returnHTML += `
     <tr>
       <td>${i}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Combat"))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Exploration"))}</td>
-      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, "Interaction"))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Combat'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Exploration'))}</td>
+      <td>${printPerksToTable(selectPerks(chosenSpecialization.perks, i, 'Interaction'))}</td>
     </tr>`;
   }
   returnHTML += `

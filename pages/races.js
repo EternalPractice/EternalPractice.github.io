@@ -1,5 +1,5 @@
 let pageHTML = `
-<h1 class="center">Races</h1>
+<h1 class="title-races">Races</h1>
 `;
 
 export { pageHTML };

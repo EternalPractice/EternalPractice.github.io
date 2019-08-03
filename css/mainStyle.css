@@ -35,9 +35,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 50fr 1fr;
   grid-template-areas:
-    "header"
-    "article"
-    "footer";
+    'header'
+    'article'
+    'footer';
 }
 
 article {
@@ -66,6 +66,62 @@ p {
 
 .activePage {
   background: rgb(23, 45, 100);
+}
+
+/* --------------------------------------------------------
+                HOME PAGE
+-------------------------------------------------------- */
+
+.title-home {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-home {
+  grid-area: 1/1/3/3;
+  place-self: center;
+}
+
+/* --------------------------------------------------------
+                ATTRIBUTES PAGE
+-------------------------------------------------------- */
+
+.title-attributes {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-home {
+  grid-area: 1/1/3/3;
+  place-self: center;
+}
+
+/* --------------------------------------------------------
+                RACES PAGE
+-------------------------------------------------------- */
+
+.title-races {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-races {
+  grid-area: 1/1/3/3;
+  place-self: center;
+}
+
+/* --------------------------------------------------------
+                RULES PAGE
+-------------------------------------------------------- */
+
+.title-rules {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-rules {
+  grid-area: 1/1/3/3;
+  place-self: center;
 }
 
 /* --------------------------------------------------------
@@ -124,4 +180,27 @@ p {
 
 .perk-table td {
   border: 1px solid #3782b4;
+}
+
+/* --------------------------------------------------------
+                PERKS PAGE
+-------------------------------------------------------- */
+
+.perk-level,
+.perk-type {
+  display: none;
+}
+
+/* --------------------------------------------------------
+                ITEMS PAGE
+-------------------------------------------------------- */
+
+.title-items {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-items {
+  grid-area: 1/1/3/3;
+  place-self: center;
 }
