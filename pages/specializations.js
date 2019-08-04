@@ -56,9 +56,7 @@ function displayPerkDetails(perk) {
     } else if (typeof perk[prop] === 'object') {
       returnString += `<div class="perk-${prop}">`;
       for (const innerProp in perk[prop]) {
-        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${
-          perk[prop][innerProp]
-        }</div>`;
+        returnString += `<div class="perk-requirement-${innerProp}">${innerProp} = ${perk[prop][innerProp]}</div>`;
       }
       returnString += `</div>`;
     }
@@ -69,7 +67,7 @@ function displayPerkDetails(perk) {
 
 function displayPerkTable(tableArray) {
   let returnString = `
-    <table class='results-table'>
+    <table class='outcome-table'>
       <tr>
         <th>Score</th>
         <th>Result</th>

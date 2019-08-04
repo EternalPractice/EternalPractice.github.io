@@ -6,8 +6,29 @@ body {
   background: rgb(10, 10, 10); /* Creates horizontal black bars */
 }
 
+main {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 2200px; /* Centers content on ultrawide screens */
+  margin: 0 auto;
+
+  /* Color matches my vs code setup */
+  background: rgb(30, 30, 30);
+  color: rgb(204, 204, 204);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 36px auto 36px;
+  grid-template-areas:
+    'header'
+    'article'
+    'footer';
+}
+
 header {
   grid-area: header;
+  position: sticky;
+  top: 0;
   background: rgb(60, 60, 60);
   display: flex;
 }
@@ -20,24 +41,6 @@ header a {
 
 header a:hover {
   background: rgb(47, 92, 206);
-}
-
-main {
-  height: 100vh;
-  max-width: 2200px; /* Centers content on ultrawide screens */
-  margin: 0 auto;
-
-  /* Color matches my vs code setup */
-  background: rgb(30, 30, 30);
-  color: rgb(204, 204, 204);
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 50fr 1fr;
-  grid-template-areas:
-    'header'
-    'article'
-    'footer';
 }
 
 article {
@@ -53,6 +56,8 @@ article {
 footer {
   grid-area: footer;
   text-align: center;
+  position: sticky;
+  bottom: 0;
   background-color: rgb(23, 45, 100);
 }
 
@@ -66,6 +71,33 @@ p {
 
 .activePage {
   background: rgb(23, 45, 100);
+}
+
+/* --------------------------------------------------------
+                WIDELY USED ITEMS
+-------------------------------------------------------- */
+
+.outcome-table {
+  text-align: center;
+  background: rgb(60, 60, 60);
+  margin: 0 auto;
+  width: 30%;
+}
+
+.outcome-table th,
+.outcome-table td {
+  border: 1px solid black;
+}
+
+.outcome-table th {
+  padding: 1% 5%;
+
+  color: rgb(204, 204, 204);
+  background-color: rgb(23, 45, 100);
+}
+
+.outcome-table tr:nth-child(even) {
+  background-color: rgb(90, 90, 90);
 }
 
 /* --------------------------------------------------------
@@ -122,6 +154,7 @@ p {
 .content-rules {
   grid-area: 1/1/3/3;
   place-self: center;
+  overflow: auto;
 }
 
 /* --------------------------------------------------------
