@@ -47,7 +47,6 @@ article {
   grid-area: article;
   height: 100%;
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 10fr;
   grid-template-rows: auto;
@@ -79,8 +78,9 @@ p {
 
 .outcome-table {
   text-align: center;
+
   background: rgb(60, 60, 60);
-  margin: 0 auto;
+  margin: 1em auto;
   width: 30%;
 }
 
@@ -155,6 +155,8 @@ p {
   grid-area: 1/1/3/3;
   place-self: center;
   overflow: auto;
+  width: 95%;
+  margin: 0 auto;
 }
 
 /* --------------------------------------------------------
