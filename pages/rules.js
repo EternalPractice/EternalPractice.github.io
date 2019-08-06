@@ -211,8 +211,83 @@ let pageHTML = `
   <p>Regardless of the action chosen, the AP cost of using the weapon will be the same and listed in the description of the weapon (above the outcome table)</p>
 
   <h3>5.4 - Armor Requirements</h3>
-  <p></p>
+  <p>Each piece of armor will have a encumbrance score, which will mean how much strength is required to wear it.</p>
+  <p>The total encumbrance score cannot be higher than the character's total strength.</p>
+  <p>For equipping the torso, the encumbrance score is doubled.</p>
+  <p>This means if the player wants to wear full plate armor (1 encumbrance score/piece) for the head, legs, arms, and torso, they would need a total strength of 5.</p>
 
+  <h3>5.5 - Armor Traits</h3>
+  <p>Each piece of armor will have the following traits: Damage Reduction, Armor Score, Available Slots, Condition Reduction, & Special Traits.</p>
+  </br>
+  <p><strong>Damage reduction</strong> will reduce the total amount of damage taken per hit.</p>
+  <p>Example: if a piece of armor has damage reduction 2, and you take 5 damage, it would be reduced to only 3 damage.</p>
+  </br>
+  <p><strong>Armor Score</strong> dictates how hard it is to hit you while wearing armor.  The armor score is used when calculating modifiers to the attacker's roll.</p>
+  <p>Example: If you are wearing a piece of armor with an armor score of 2, then the attacker would apply -2 to their roll when attempting to attack you.</p>
+  </br>
+  <p><strong>Available slots</strong> determine how much a character can store on that section.</p>  
+  <p>See "5.1 - Equipment Location & Storage" for more detail.</p>
+  </br>
+  <p>Some pieces of armor have <strong>Condition Reduction</strong> which acts as damage reduction for a certain negative condition.</p>
+  <p>A robe might have fire resistance 5, which would reduce the fire damage taken by 5.</p>
+  </br>
+  <p><strong>Special Traits</strong> are unique qualities added to the piece of armor.  They can be added through crafting (such as adding more slots through pockets), or unique to that type of armor.</p>
+  <p>See the glossary for more details on armor special traits.</p>
+
+
+
+  <h2>6 - Magic & MP</h2>
+
+  <h3>6.1 - Magic Casting</h3>
+  <p>Magic is available to every character that meet the requirements, and is earned the same way perks are earned (though spending XP).</p>
+  <p>A character must have at least one free hand available in order to cast magic, unless otherwise stated in the spell description/through a perk.</p>
+  <p>Armor (unless specially stated) does not affect spell casting as it does in other table top systems.</p>
+
+  <h3>6.2 - Casting Costs</h3>
+  <p>Each spell will have varies casting costs associated with them through the forms of AP, MP, and other possible costs (such as HP in blood magic).</p>
+  <p>Each spells base cost will be in the spell description, and can be modified through spending MP (see next section).</p>
+
+  <h3>6.3 - Modifying Magic with MP</h3>
+  <p>Each spell can be modified by spending additional MP while casting it, changing it's affects in a variety of ways.</p>
+  <p>Spells can be made to affect more than one target, be made to last longer, cast at a further duration, etc.,</p>
+  <p>When casting a spell, the player can inform the GM that they are modifying the spell.  MP is spent whether the spell succeeds or fails.</p>
+  <p>MP cost will be listed with the spell modifications, the details found in the glossary.</p>
+
+  <h3>6.4 - Spell Duration</h3>
+  <p>Some spells have a longer duration than instantaneous.  If a spell has a longer duration, it will be listed in the description.</p>
+  <p>Some other spells (like buffing magic) can also be extended throughout multiple turns through concentrating on them.</p>
+  <p>If a player decides to extend the duration of a spell, and it is extendable, they will spend the AP cost each turn to maintain concentration.</p>
+  <p>Concentration can be interrupted (see detailed combat section below for more detail).</p>
+  <p>Additional costs (such as MP) do not have to be paid each round, only AP.</p>
+  <p>A player must have enough AP for the round to concentrate on it.</p>
+  <p>There is no limit (besides AP) to how many spells a player can concentrate on per round.  If one spell is interrupted, all spells are interrupted.</p>
+
+  <h3>6.5 - MP Refresh Rate</h3>
+  <p>Half a player's total MP will refresh at the end of an encounter.</p>
+  <p>Encounters are defined as either a fight (so when the last enemy is slain), exploration (so when the destination is arrived to), or interaction (when the player stops talking to the NPC).</p>
+  <p>After sleeping, all MP is restored.</p>
+
+
+
+  <h2>7 - Earning & Spending XP</h2>
+
+  <h3>7.1 - Earning XP</h3>
+  <p>XP is earned through a game session for participating in successful encounter.</p>
+  <p>XP is handed out through GM discretion, and can be modified for the type of game they are running.</p>
+  <p>XP should be handed out for every successful encounter, whether through combat, exploration or interaction.</p>
+  <p>When a player earns XP, they should feel that they have been rewarded for pushing the story further.</p>
+  <p>Unlike video games, players should not be encouraged to "XP farm" by creating and grinding through encounters for encounters sake.</p>
+  <p>Each group should come to an understanding before the game is run in how XP should be handed out.</p>
+
+  <h3>7.2 - Spending XP</h3>
+  <p>XP should be spent during a night's rest (sleep), or between game sessions.</p>
+  <p>As much or as little XP can be spent during this time.  XP can be saved for another time.</p>
+
+
+  
+  <h2>8 - Combat Details</h2>
+
+  <h3>8.1 - </h3>
 
 </div>
 `;

@@ -239,3 +239,17 @@ p {
   grid-area: 1/1/3/3;
   place-self: center;
 }
+
+/* --------------------------------------------------------
+                GLOSSARY PAGE
+-------------------------------------------------------- */
+
+.title-glossary {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+
+.content-glossary {
+  grid-area: 1/1/3/3;
+  place-self: center;
+}
