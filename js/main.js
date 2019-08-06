@@ -5,6 +5,7 @@ import * as rule from '../pages/rules.js';
 import * as specialization from '../pages/specializations.js';
 import * as item from '../pages/items.js';
 import * as footer from '../pages/footer.js';
+import * as glossary from '../pages/glossary.js';
 
 // Runs everything once document is ready
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,9 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (e.target.classList.contains('updatable')) {
       console.log(
-        `It's updatable!  Running update on ${e.target.innerHTML} & current selection is ${
-          pageObject.currentSection
-        }`
+        `It's updatable!  Running update on ${e.target.innerHTML} & current selection is ${pageObject.currentSection}`
       );
 
       switch (pageObject.currentSection) {
@@ -68,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
           break;
         case 'Weapons-items':
           document.getElementById('MainContent').innerHTML = item.pageHTML;
+          break;
+        case 'Glossary':
+          document.getElementById('MainContent').innerHTML = glossary.pageHTML;
           break;
       }
     }
