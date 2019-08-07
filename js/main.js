@@ -1,11 +1,12 @@
 import * as home from '../pages/home.js';
+import * as rule from '../pages/rules.js';
 import * as attribute from '../pages/attributes.js';
 import * as race from '../pages/races.js';
-import * as rule from '../pages/rules.js';
+import * as skill from '../pages/skills.js';
 import * as specialization from '../pages/specializations.js';
 import * as item from '../pages/items.js';
-import * as footer from '../pages/footer.js';
 import * as glossary from '../pages/glossary.js';
+import * as footer from '../pages/footer.js';
 
 // Runs everything once document is ready
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
           break;
         case 'Races':
           document.getElementById('MainContent').innerHTML = race.pageHTML;
+          break;
+        case 'Skills':
+          document.getElementById('MainContent').innerHTML = skill.pageHTML;
           break;
         case 'Rules':
           document.getElementById('MainContent').innerHTML = rule.pageHTML;

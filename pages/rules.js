@@ -285,9 +285,26 @@ let pageHTML = `
 
 
   
-  <h2>8 - Combat Details</h2>
+  <h2>8 - Finer Combat Details</h2>
 
-  <h3>8.1 - </h3>
+  <h3>8.1 - Effective Distance on Ranged Weapons</h3>
+  <p>Each ranged weapon has a stat called "Effective Distance".  This is how many squares you can use the weapon before negative modifiers start to apply.</p>
+  <p>Negative modifiers will start at -2, and go up by -2 every time you exceed the effective distance.</p>
+  <p>Example: If a weapon has an effective distance of 5, you will received -2 at 6-10 range, -4 at 11-15 range and so on.</p>
+  </br>
+  <p>There is no maximum range for weapons, or maximum negative modifiers.  Theoretically, everything is within range on a natural 20.</p>
+
+  <h3>8.2 - Interrupting ongoing actions</h3>
+  <p>If a player is performing an action between turns (like casting a long spell), enemies will have a chance to interrupt the action.</p>
+  <p>Players who take damage must make a Fortitude save with goal roll equal to twice their remaining AP left in the action.</p>
+  <p>If a player takes more than half their remaining health as damage during this interruption, the Fortitude save goal is doubled.</p>
+
+  <h3>8.3 - Using Action Surges</h3>
+  <p>For each point of endurance a player has, they have one action surge available to them.</p>
+  <p>Action surges are used to immediately refill your AP pool for the turn, allowing you to do more in one turn than is normally possible.</p>
+  <p>Once you use an action surge, it doesn't come back until the next day.</p>
+
+  
 
 </div>
 `;

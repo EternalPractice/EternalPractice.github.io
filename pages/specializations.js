@@ -45,6 +45,7 @@ function printPerksToTable(perkArray) {
 function displayPerkDetails(perk) {
   let returnString = `
     <div class="perk-info">
+      <div class="updatable close-btn">CLICK TO CLOSE</div>
       <div class="perk-name">${perk.name}</div>
       <div class="perk-AP">AP Cost = ${perk.AP}</div>
       <div class="perk-details">${perk.details}</div>
