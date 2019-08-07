@@ -12,3 +12,4 @@
 [][2019/08/07] Create a data.js file for skills.
 [][2019/08/07] Style the perk details box.
 [][2019/08/07] Add rule for saves (Ref, Fort, Will).
+[][2019/08/07] Put update history/version on home page.
