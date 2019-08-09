@@ -16,8 +16,8 @@
   // 	"description": "Log output to console"
   // }
 
-  "Create perk": {
-    "prefix": "!perk",
+  "Create perk w/ table": {
+    "prefix": "!perkt",
     "body": [
       "{",
       "level: $1,",
@@ -73,6 +73,24 @@
       "Result: '$19'",
       "}",
       "]",
+      "},"
+    ]
+  },
+  "Create perk": {
+    "prefix": "!perk",
+    "body": [
+      "{",
+      "level: $1,",
+      "type: '$2',",
+      "name: '$3',",
+      "AP: $4,",
+      "requirements: {",
+      "strength: $5,",
+      "perception: $6,",
+      "intelligence: $7,",
+      "specialization: $8",
+      "},",
+      "details: `$9`",
       "},"
     ]
   }
