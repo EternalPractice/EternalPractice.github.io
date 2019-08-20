@@ -20,9 +20,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 36px auto 36px;
   grid-template-areas:
-    'header'
-    'article'
-    'footer';
+    "header"
+    "article"
+    "footer";
 }
 
 header {
@@ -80,7 +80,7 @@ p {
   text-align: center;
 
   background: rgb(60, 60, 60);
-  margin: 1em0 auto;
+  margin: 1em auto;
   width: 40%;
 }
 
@@ -112,6 +112,12 @@ p {
 .content-home {
   grid-area: 1/1/3/3;
   place-self: center;
+}
+
+.date {
+  color: rgb(148, 149, 226);
+  font-style: italic;
+  font-weight: 800;
 }
 
 /* --------------------------------------------------------

@@ -5,6 +5,7 @@
 [x][2019/08/02] Apply CSS Grid formatting to other pages.
 [x][2019/08/01] When clicking to update, only update if something needs to update (create a class `updatable`?)
 [x][2019/08/03] Create a button for the perk details to close it out.
+[x][2019/08/07] Put update history/version on home page.
 
 [][2019/08/03] Create a table of contents for the rules page.
 [][2019/08/03] Create a "box/card" for the race section (each race it's own frame)
@@ -12,4 +13,5 @@
 [][2019/08/07] Create a data.js file for skills.
 [][2019/08/07] Style the perk details box.
 [][2019/08/07] Add rule for saves (Ref, Fort, Will).
-[][2019/08/07] Put update history/version on home page.
+
+[][2019/08/20] Create a data page for home (for updates) and create controller.
