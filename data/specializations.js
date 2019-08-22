@@ -620,6 +620,91 @@ let specializationData = [
         details: `An adventurer can use their magic ability to change the energy in the environment around them.</br>
         With a successful <em>Magic</em> check, the adventurer can charm an amount of creatures equal to the degree of success while in the same environment.</br>
         Charmed creatures (see Glossary for more details) can be persuaded with a +2 to the goal.`
+      },
+      {
+        level: 4,
+        type: 'Exploration',
+        name: 'Teleportation',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 3,
+          intelligence: 4,
+          specialization: false
+        },
+        details: `An adventurer can use their magic to teleport themselves across large distances.</br>
+        With a successful <em>Magic</em> check, the adventurer can teleport up to x00 feet in one direction, where x is the degree of success.`
+      },
+      {
+        level: 5,
+        type: 'Exploration',
+        name: 'Teleportation Circle',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 3,
+          intelligence: 5,
+          specialization: true
+        },
+        details: `An adventurer can use their magic to teleport themselves and everyone in a 5-foot radius circle across large distances.</br>
+        With a successful <em>Magic</em> check, the adventurer can teleport willing creatures up to x00 feet in one direction, where x is the degree of success.</br>
+        Unwilling creature are also teleported upon a failed will save.`
+      },
+      {
+        level: 4,
+        type: 'Combat',
+        name: 'Barrier',
+        AP: 5,
+        requirements: {
+          strength: 1,
+          perception: 2,
+          intelligence: 4,
+          specialization: false
+        },
+        details: `An adventurer can use their magical ability to create a barrier around themselves that will block damage.</br>
+      A successful <em>Magic-Matter</em> check will block the following amount of damage:`,
+        table: [
+          {
+            Score: 1,
+            Result: '2'
+          },
+          {
+            Score: 2,
+            Result: '4'
+          },
+          {
+            Score: 3,
+            Result: '6'
+          },
+          {
+            Score: 4,
+            Result: '8'
+          },
+          {
+            Score: 5,
+            Result: '10'
+          },
+          {
+            Score: 6,
+            Result: '12'
+          },
+          {
+            Score: 7,
+            Result: '15'
+          },
+          {
+            Score: 8,
+            Result: '18'
+          },
+          {
+            Score: 9,
+            Result: '20'
+          },
+          {
+            Score: 10,
+            Result: '25'
+          }
+        ]
       }
     ]
   },
