@@ -8,9 +8,8 @@ let pageHTML = `
   <p><span class="date">2019/08/20</span>  -  Rules 1.0 are complete & Alchemy specialization is complete.  Arcana specialization started.</p>
   <p><span class="date">2019/08/21</span>  -  Added 3 Arcane perks.</p>
   <p><span class="date">2019/08/22</span>  -  Added 3 Arcane perks.</p>
-  
+  <p><span class="date">2019/08/25</span>  -  Completed Arcane perks.</p>
 </div>
-
 `;
 
 export { pageHTML };

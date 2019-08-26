@@ -1,14 +1,14 @@
 let specializationData = [
   {
-    name: 'Alchemy',
+    name: "Alchemy",
     description: `Alchemy is the study of potions and their ingredients.</br>
     Adventurers who study alchemy can make potions to solve a wide variety of problems.</br>
     From making oils that set things on fire, to love potions, to healing salves.`,
     perks: [
       {
         level: 1,
-        type: 'Exploration',
-        name: 'Identify Ingredient',
+        type: "Exploration",
+        name: "Identify Ingredient",
         AP: 3,
         requirements: {
           strength: 1,
@@ -20,8 +20,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Exploration',
-        name: 'Create burn salve',
+        type: "Exploration",
+        name: "Create burn salve",
         AP: 10,
         requirements: {
           strength: 1,
@@ -34,50 +34,50 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '1'
+            Result: "1"
           },
           {
             Score: 2,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 3,
-            Result: '3'
+            Result: "3"
           },
           {
             Score: 4,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 5,
-            Result: '5'
+            Result: "5"
           },
           {
             Score: 6,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 7,
-            Result: '7'
+            Result: "7"
           },
           {
             Score: 8,
-            Result: '8'
+            Result: "8"
           },
           {
             Score: 9,
-            Result: '9'
+            Result: "9"
           },
           {
             Score: 10,
-            Result: '10'
+            Result: "10"
           }
         ]
       },
       {
         level: 1,
-        type: 'Combat',
-        name: 'Throw Vial',
+        type: "Combat",
+        name: "Throw Vial",
         AP: 2,
         requirements: {
           strength: 1,
@@ -90,8 +90,8 @@ let specializationData = [
       },
       {
         level: 3,
-        type: 'Interaction',
-        name: 'Perfume',
+        type: "Interaction",
+        name: "Perfume",
         AP: 100,
         requirements: {
           strength: 1,
@@ -104,8 +104,8 @@ let specializationData = [
       },
       {
         level: 2,
-        type: 'Exploration',
-        name: 'Craft Basic Potion',
+        type: "Exploration",
+        name: "Craft Basic Potion",
         AP: 100,
         requirements: {
           strength: 1,
@@ -118,8 +118,8 @@ let specializationData = [
       },
       {
         level: 3,
-        type: 'Exploration',
-        name: 'Craft Intermediate Potion',
+        type: "Exploration",
+        name: "Craft Intermediate Potion",
         AP: 100,
         requirements: {
           strength: 1,
@@ -132,8 +132,8 @@ let specializationData = [
       },
       {
         level: 4,
-        type: 'Exploration',
-        name: 'Craft Expert Potion',
+        type: "Exploration",
+        name: "Craft Expert Potion",
         AP: 100,
         requirements: {
           strength: 1,
@@ -146,8 +146,8 @@ let specializationData = [
       },
       {
         level: 5,
-        type: 'Exploration',
-        name: 'Craft Master Potion',
+        type: "Exploration",
+        name: "Craft Master Potion",
         AP: 100,
         requirements: {
           strength: 1,
@@ -160,8 +160,8 @@ let specializationData = [
       },
       {
         level: 5,
-        type: 'Combat',
-        name: 'Poison Immunity',
+        type: "Combat",
+        name: "Poison Immunity",
         AP: 0,
         requirements: {
           strength: 1,
@@ -173,8 +173,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Interaction',
-        name: 'Better Flavor Food',
+        type: "Interaction",
+        name: "Better Flavor Food",
         AP: 100,
         requirements: {
           strength: 1,
@@ -187,50 +187,50 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 2,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 3,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 4,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 5,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 6,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 7,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 8,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 9,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 10,
-            Result: '8'
+            Result: "8"
           }
         ]
       },
       {
         level: 2,
-        type: 'Combat',
-        name: 'Potion Spray',
+        type: "Combat",
+        name: "Potion Spray",
         AP: 2,
         requirements: {
           strength: 1,
@@ -243,8 +243,8 @@ let specializationData = [
       },
       {
         level: 3,
-        type: 'Combat',
-        name: 'Create Potion Cloud',
+        type: "Combat",
+        name: "Create Potion Cloud",
         AP: 5,
         requirements: {
           strength: 1,
@@ -257,8 +257,8 @@ let specializationData = [
       },
       {
         level: 2,
-        type: 'Interaction',
-        name: 'Appraise Potion',
+        type: "Interaction",
+        name: "Appraise Potion",
         AP: 50,
         requirements: {
           strength: 1,
@@ -271,50 +271,50 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: 'Incorrect Appraisal, +/- 100% value'
+            Result: "Incorrect Appraisal, +/- 100% value"
           },
           {
             Score: 2,
-            Result: 'Incorrect Appraisal, +/- 50% value'
+            Result: "Incorrect Appraisal, +/- 50% value"
           },
           {
             Score: 3,
-            Result: 'Incorrect Appraisal, +/- 20% value'
+            Result: "Incorrect Appraisal, +/- 20% value"
           },
           {
             Score: 4,
-            Result: 'Incorrect Appraisal, +/- 10% value'
+            Result: "Incorrect Appraisal, +/- 10% value"
           },
           {
             Score: 5,
-            Result: 'Correct Appraisal, +/- 80% value'
+            Result: "Correct Appraisal, +/- 80% value"
           },
           {
             Score: 6,
-            Result: 'Correct Appraisal, +/- 60% value'
+            Result: "Correct Appraisal, +/- 60% value"
           },
           {
             Score: 7,
-            Result: 'Correct Appraisal, +/- 40% value'
+            Result: "Correct Appraisal, +/- 40% value"
           },
           {
             Score: 8,
-            Result: 'Correct Appraisal, +/- 20% value'
+            Result: "Correct Appraisal, +/- 20% value"
           },
           {
             Score: 9,
-            Result: 'Correct Appraisal, +/- 10% value'
+            Result: "Correct Appraisal, +/- 10% value"
           },
           {
             Score: 10,
-            Result: 'Correct Appraisal, correct value'
+            Result: "Correct Appraisal, correct value"
           }
         ]
       },
       {
         level: 4,
-        type: 'Interaction',
-        name: 'Pheromones',
+        type: "Interaction",
+        name: "Pheromones",
         AP: 50,
         requirements: {
           strength: 1,
@@ -328,8 +328,8 @@ let specializationData = [
       },
       {
         level: 5,
-        type: 'Interaction',
-        name: 'Pheromone Incense',
+        type: "Interaction",
+        name: "Pheromone Incense",
         AP: 50,
         requirements: {
           strength: 1,
@@ -342,8 +342,8 @@ let specializationData = [
       },
       {
         level: 4,
-        type: 'Combat',
-        name: 'Create Makeshift Bomb',
+        type: "Combat",
+        name: "Create Makeshift Bomb",
         AP: 10,
         requirements: {
           strength: 1,
@@ -356,58 +356,58 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 2,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 3,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 4,
-            Result: '8'
+            Result: "8"
           },
           {
             Score: 5,
-            Result: '10'
+            Result: "10"
           },
           {
             Score: 6,
-            Result: '12'
+            Result: "12"
           },
           {
             Score: 7,
-            Result: '14'
+            Result: "14"
           },
           {
             Score: 8,
-            Result: '16'
+            Result: "16"
           },
           {
             Score: 9,
-            Result: '18'
+            Result: "18"
           },
           {
             Score: 10,
-            Result: '20'
+            Result: "20"
           }
         ]
       }
     ]
   },
   {
-    name: 'Arcane',
+    name: "Arcane",
     description: `Arcane is the study of magic and it's effects on the world, the keyword being <em>study</em>.</br>
     Those who focus on the arcane has access to some unique spells and also (and more importantly) modify spells from other disciplines.</br>
     The arcane favors intelligence and knowledge over instinct.`,
     perks: [
       {
         level: 1,
-        type: 'Combat',
-        name: 'Magic Missile',
+        type: "Combat",
+        name: "Magic Missile",
         AP: 3,
         requirements: {
           strength: 1,
@@ -419,50 +419,50 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 2,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 3,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 4,
-            Result: '8'
+            Result: "8"
           },
           {
             Score: 5,
-            Result: '10'
+            Result: "10"
           },
           {
             Score: 6,
-            Result: '12'
+            Result: "12"
           },
           {
             Score: 7,
-            Result: '14'
+            Result: "14"
           },
           {
             Score: 8,
-            Result: '16'
+            Result: "16"
           },
           {
             Score: 9,
-            Result: '18'
+            Result: "18"
           },
           {
             Score: 10,
-            Result: '20'
+            Result: "20"
           }
         ]
       },
       {
         level: 2,
-        type: 'Combat',
-        name: 'Meta Magic: Extend Spell',
+        type: "Combat",
+        name: "Meta Magic: Extend Spell",
         AP: 2,
         requirements: {
           strength: 1,
@@ -477,8 +477,8 @@ let specializationData = [
       },
       {
         level: 3,
-        type: 'Combat',
-        name: 'Meta Magic: Duplicate Spell',
+        type: "Combat",
+        name: "Meta Magic: Duplicate Spell",
         AP: 2,
         requirements: {
           strength: 1,
@@ -491,8 +491,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Exploration',
-        name: 'Detect Magic',
+        type: "Exploration",
+        name: "Detect Magic",
         AP: 10,
         requirements: {
           strength: 1,
@@ -505,8 +505,8 @@ let specializationData = [
       },
       {
         level: 2,
-        type: 'Exploration',
-        name: 'Arcane Recovery',
+        type: "Exploration",
+        name: "Arcane Recovery",
         AP: 2,
         requirements: {
           strength: 1,
@@ -520,50 +520,50 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '1'
+            Result: "1"
           },
           {
             Score: 2,
-            Result: '1'
+            Result: "1"
           },
           {
             Score: 3,
-            Result: '1'
+            Result: "1"
           },
           {
             Score: 4,
-            Result: '1'
+            Result: "1"
           },
           {
             Score: 5,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 6,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 7,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 8,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 9,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 10,
-            Result: '3'
+            Result: "3"
           }
         ]
       },
       {
         level: 3,
-        type: 'Exploration',
-        name: 'Meta Magic: Create Spell Vessel',
+        type: "Exploration",
+        name: "Meta Magic: Create Spell Vessel",
         AP: 5,
         requirements: {
           strength: 1,
@@ -578,8 +578,8 @@ let specializationData = [
       },
       {
         level: 1,
-        type: 'Interaction',
-        name: 'Overburden with Knowledge',
+        type: "Interaction",
+        name: "Overburden with Knowledge",
         AP: 20,
         requirements: {
           strength: 1,
@@ -593,8 +593,8 @@ let specializationData = [
       },
       {
         level: 2,
-        type: 'Interaction',
-        name: 'Recall Factoid',
+        type: "Interaction",
+        name: "Recall Factoid",
         AP: 20,
         requirements: {
           strength: 1,
@@ -608,8 +608,8 @@ let specializationData = [
       },
       {
         level: 3,
-        type: 'Interaction',
-        name: 'Charge Environment',
+        type: "Interaction",
+        name: "Charge Environment",
         AP: 20,
         requirements: {
           strength: 1,
@@ -623,8 +623,8 @@ let specializationData = [
       },
       {
         level: 4,
-        type: 'Exploration',
-        name: 'Teleportation',
+        type: "Exploration",
+        name: "Teleportation",
         AP: 20,
         requirements: {
           strength: 1,
@@ -637,8 +637,8 @@ let specializationData = [
       },
       {
         level: 5,
-        type: 'Exploration',
-        name: 'Teleportation Circle',
+        type: "Exploration",
+        name: "Teleportation Circle",
         AP: 20,
         requirements: {
           strength: 1,
@@ -652,8 +652,8 @@ let specializationData = [
       },
       {
         level: 4,
-        type: 'Combat',
-        name: 'Barrier',
+        type: "Combat",
+        name: "Barrier",
         AP: 5,
         requirements: {
           strength: 1,
@@ -666,56 +666,101 @@ let specializationData = [
         table: [
           {
             Score: 1,
-            Result: '2'
+            Result: "2"
           },
           {
             Score: 2,
-            Result: '4'
+            Result: "4"
           },
           {
             Score: 3,
-            Result: '6'
+            Result: "6"
           },
           {
             Score: 4,
-            Result: '8'
+            Result: "8"
           },
           {
             Score: 5,
-            Result: '10'
+            Result: "10"
           },
           {
             Score: 6,
-            Result: '12'
+            Result: "12"
           },
           {
             Score: 7,
-            Result: '15'
+            Result: "15"
           },
           {
             Score: 8,
-            Result: '18'
+            Result: "18"
           },
           {
             Score: 9,
-            Result: '20'
+            Result: "20"
           },
           {
             Score: 10,
-            Result: '25'
+            Result: "25"
           }
         ]
+      },
+      {
+        level: 5,
+        type: "Combat",
+        name: "Magic Eruption",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 1,
+          intelligence: 5,
+          specialization: true
+        },
+        details: `An adventurer can burn their entire MP pool to create an explosion emanating from their body.</br>
+      Upon a successful <em>magic</em> check, a magical blast explodes from them, dealing their MP total times the degree of success to everything within 20 feet of them.`
+      },
+      {
+        level: 4,
+        type: "Interaction",
+        name: "One-on-One",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 4,
+          intelligence: 4,
+          specialization: false
+        },
+        details: `An adventurer can make such a strong connection with another being that the rest of the universe seems to melt away.</br>
+      Upon a successful <em>magic</em> check, the adventurer and it's target are taken to a pocket dimension (from their perspective) and can have a completely one-on-one interaction.</br>
+      From an outside perspective, non of this happens and no time takes place.</br>
+      This will last a number of minutes equal to the degree of success, or until the adventurer willing ends the interaction.`
+      },
+      {
+        level: 5,
+        type: "Interaction",
+        name: "Forgetful Presence",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 4,
+          intelligence: 5,
+          specialization: false
+        },
+        details: `An adventurer can use their magical ability to blend into the background of an interaction.</br>
+      After making a successful <em>magic</em> check, the adventurer is completely ignored & forgotten in an interaction.</br>
+      Beings in the interaction completely ignore and forget the presence of the adventurer for as many minutes as the degree of success.`
       }
     ]
   },
   {
-    name: 'Archery',
+    name: "Archery",
     description: `Archery is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -728,13 +773,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Artifice',
+    name: "Artifice",
     description: `Artifice is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -747,13 +792,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Bardic Lore',
+    name: "Bardic Lore",
     description: `Bardic Lore is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -766,13 +811,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Beast Master',
+    name: "Beast Master",
     description: `Beast Master is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -785,13 +830,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Brute Force',
+    name: "Brute Force",
     description: `Brute Force is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -804,13 +849,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Cavalier',
+    name: "Cavalier",
     description: `Cavalier is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -823,13 +868,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Commander',
+    name: "Commander",
     description: `Commander is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -842,13 +887,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Dual Wielder',
+    name: "Dual Wielder",
     description: `Dual Wielder is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -861,13 +906,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Elements',
+    name: "Elements",
     description: `Elements is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -880,13 +925,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Faith',
+    name: "Faith",
     description: `Faith is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -899,13 +944,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Flail Master',
+    name: "Flail Master",
     description: `Flail Master is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -918,13 +963,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Martial Arts',
+    name: "Martial Arts",
     description: `Martial Arts is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -937,13 +982,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Nature',
+    name: "Nature",
     description: `Nature is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -956,13 +1001,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Occultism',
+    name: "Occultism",
     description: `Occultism is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -975,13 +1020,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Psionics',
+    name: "Psionics",
     description: `Psionics is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -994,13 +1039,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Raptor fighting',
+    name: "Raptor fighting",
     description: `Raptor fighting is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1013,13 +1058,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Brawler',
+    name: "Brawler",
     description: `Brawler is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1032,13 +1077,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Thievery',
+    name: "Thievery",
     description: `Thievery is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         requirements: {
           AP: 0,
           strength: 1,
@@ -1051,13 +1096,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Tracking',
+    name: "Tracking",
     description: `Tracking is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1070,13 +1115,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Shapeshifting',
+    name: "Shapeshifting",
     description: `Shapeshifting is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1089,13 +1134,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Skulker',
+    name: "Skulker",
     description: `Skulker is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1108,13 +1153,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Blood Mage',
+    name: "Blood Mage",
     description: `Blood Mage is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
@@ -1127,13 +1172,13 @@ let specializationData = [
     ]
   },
   {
-    name: 'Undeath',
+    name: "Undeath",
     description: `Undeath is some stuff.`,
     perks: [
       {
         level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
+        type: "Exploration",
+        name: "<place holder>",
         AP: 0,
         requirements: {
           strength: 1,
