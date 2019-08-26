@@ -14,4 +14,6 @@
 [][2019/08/07] Style the perk details box.
 [][2019/08/07] Add rule for saves (Ref, Fort, Will).
 
-[][2019/08/20] Create a data page for home (for updates) and create controller.
+[][2019/08/20] Create a data.js file for home page updates.
+
+[][2019/08/25] Add falling damage rules.
