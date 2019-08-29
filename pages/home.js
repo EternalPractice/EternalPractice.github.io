@@ -10,6 +10,7 @@ let pageHTML = `
   <p><span class="date">2019/08/22</span>  -  Added 3 Arcane perks.</p>
   <p><span class="date">2019/08/25</span>  -  Completed Arcane perks.</p>
   <p><span class="date">2019/08/26</span>  -  Changed "Archery" to "Arcing Weapons", aded the combat perks + descriptions.</p>
+  <p><span class="date">2019/08/29</span>  -  Added 3 Arcing Weapons perks.</p>
 </div>
 `;
 
