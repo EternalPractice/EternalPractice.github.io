@@ -956,7 +956,7 @@ let specializationData = [
       With this perk, they can use a <em>ranged attack</em> with an arcing weapon at half the AP cost.`
       },
       {
-        level: 1,
+        level: 2,
         type: "Exploration",
         name: "Grapple Hook Expertise",
         AP: 0,
@@ -969,7 +969,7 @@ let specializationData = [
         details: `When using a grappling hook, you can add +2 to the goal roll when making a <em>1-handed ranged attack</em>.`
       },
       {
-        level: 2,
+        level: 3,
         type: "Exploration",
         name: "Setup Zipline",
         AP: 20,
@@ -980,10 +980,10 @@ let specializationData = [
           specialization: false
         },
         details: `An adventurer can shoot a rope with an arrow to setup a zipline across two points.</br>
-      After a successful <em>2-handed ranged</em> check, a number of creatures can zip across equal to the degree of success.`
+      After a successful <em>ranged</em> check, a number of creatures can zip across equal to the degree of success.`
       },
       {
-        level: 3,
+        level: 4,
         type: "Exploration",
         name: "Determine trajectory",
         AP: 20,
@@ -991,7 +991,7 @@ let specializationData = [
           strength: 1,
           perception: 3,
           intelligence: 3,
-          specialization: false
+          specialization: true
         },
         details: `An adventurer can examine a projectile and determine the trajectory & point of origin from where it came.</br>
       With a successful <em>ranged</em> check, an adventurer can determine the direction of a projectile and the exact point of origin if it's within the distance on the outcome table:`,
@@ -1037,12 +1037,123 @@ let specializationData = [
             Result: "300 ft"
           }
         ]
+      },
+      {
+        level: 1,
+        type: "Exploration",
+        name: "Determine depth specialization",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 2,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer when using a <em>ranged attack</em> check to determine depth gets a +2 to the goal roll.`
+      },
+      {
+        level: 5,
+        type: "Exploration",
+        name: "Embed rope",
+        AP: 20,
+        requirements: {
+          strength: 5,
+          perception: 3,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can shoot an arrow (or throw a piercing weapon) with rope attached into a solid surface in order to climb it.</br>
+      After a successful <em>ranged</em> check, a number of creatures can climb up the rope equal to the degree of success`
+      },
+      {
+        level: 1,
+        type: "Interaction",
+        name: "Toss coin",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can throw a coin at a hard surface in order to create a distraction while sneaking.</br>
+        After a successful <em>1-handed ranged attack</em> check, the closest x creatures within a 25 foot radius will be distracted, x equal to the degree of success.`
+      },
+      {
+        level: 2,
+        type: "Interaction",
+        name: "Trick Shot",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 3,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can show off their skill with ranged weapons by making a trick shot, changing the favor of their next interaction with someone.</br>
+        When a situation is appropriate (GM discretion), a successful <em>ranged attack</em> check will yield a charisma bonus equal to the degree of success.`
+      },
+      {
+        level: 5,
+        type: "Interaction",
+        name: "Influence Dice",
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 5,
+          intelligence: 4,
+          specialization: true
+        },
+        details: `An adventurer can toss dice in such a way that they can call to a degree of accuracy what number will come up on a d6.</br>
+        When making a successful <em>Ranged attack</em> check, pick from the list of results of the die throw based on the degree of success.`,
+        table: [
+          {
+            Score: 1,
+            Result: "1"
+          },
+          {
+            Score: 2,
+            Result: "1,2"
+          },
+          {
+            Score: 3,
+            Result: "1,2"
+          },
+          {
+            Score: 4,
+            Result: "1,2,3"
+          },
+          {
+            Score: 5,
+            Result: "1,2,3"
+          },
+          {
+            Score: 6,
+            Result: "1,2,3,4"
+          },
+          {
+            Score: 7,
+            Result: "1,2,3,4"
+          },
+          {
+            Score: 8,
+            Result: "1,2,3,4,5"
+          },
+          {
+            Score: 9,
+            Result: "1,2,3,4,5"
+          },
+          {
+            Score: 10,
+            Result: "1,2,3,4,5,6"
+          }
+        ]
       }
     ]
   },
   {
     name: "Artifice",
-    description: `Artifice is some stuff.`,
+    description: `Artifice is some stuff. `,
     perks: [
       {
         level: 0,
