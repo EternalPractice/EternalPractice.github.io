@@ -13,6 +13,8 @@ let pageHTML = `
   <p><span class="date">2019/08/29</span>  -  Added 3 Arcing Weapons perks.</p>
   <p><span class="date">2019/08/30</span>  -  Completed Arcing Weapons combat and exploration perks.</p>
   <p><span class="date">2019/08/31</span>  -  Added 3 Arcing Weapons perks (Interaction).</p>
+  <p><span class="date">2019/09/03</span>  -  Changed "Artifice" to "Engineering", completed all perks.</p>
+  <p><span class="date">2019/09/03</span>  -  Completed Bardic Lore perks.</p>
 </div>
 `;
 
