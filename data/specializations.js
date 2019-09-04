@@ -1811,20 +1811,353 @@ let specializationData = [
   },
   {
     name: 'Beast Master',
-    description: `Beast Master is some stuff.`,
+    description: `A Beast Master is an adventurer who has gained mastery over animals and can encourage them to work with them.</br>
+    Whether by fighting amongst a pack of wolves, having a pigeon deliver a message, or commanding an otter to disable a torpedo.</br> 
+    A Beast Master can always find an animal that works with it's needs.`,
     perks: [
       {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
+        level: 1,
+        type: 'Combat',
+        name: 'Command: Move',
+        AP: 3,
         requirements: {
           strength: 1,
           perception: 1,
           intelligence: 1,
           specialization: false
         },
-        details: `<place holder>`
+        details: `An adventurer who has befriended a creature (see glossary) can command it to move to a specific point.</br>
+        When making a successful <em>Animal handling</em> check, th creature will move a total distance when able equal to the degree of success.</br>
+        If the creature must take multiple turns to do so it will.  The AP cost is used until the creature has completed the move.`
+      },
+      {
+        level: 2,
+        type: 'Combat',
+        name: 'Command: Attack',
+        AP: 3,
+        requirements: {
+          strength: 2,
+          perception: 2,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to attack a specific target within range.</br>
+      When making a successful <em>Animal handling</em> check, the creature will attack a target, sharing the roll of the adventurer.</br>
+      If the creature is not within range, it will not attack.`
+      },
+      {
+        level: 3,
+        type: 'Combat',
+        name: 'Command: Defend',
+        AP: 3,
+        requirements: {
+          strength: 3,
+          perception: 3,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to defend a specific target or space.</br>
+      When making a successful <em>Animal handling</em> check, the creature will actively fight any other creature who threatens the space for a number of turns equal to the degree of success.`
+      },
+      {
+        level: 4,
+        type: 'Combat',
+        name: 'Beastly Combat Stance',
+        AP: 3,
+        requirements: {
+          strength: 3,
+          perception: 4,
+          intelligence: 2,
+          specialization: true
+        },
+        details: `An adventurer can fight in a way that speaks subconsciously to befriended creatures, encouraging them to fight harder.</br>
+      When using this combat stance, befriended creatures get +2 to all combat checks`
+      },
+      {
+        level: 5,
+        type: 'Combat',
+        name: 'Command: Any',
+        AP: 5,
+        requirements: {
+          strength: 4,
+          perception: 5,
+          intelligence: 2,
+          specialization: true
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to do any specific action that it's capable of doing.</br>
+      When making a successful <em>Animal handling</em> check, the creature will perform the action, sharing the roll of the adventurer.</br>
+      The action can be as specific and long as the adventurer wants, and every sub action will share the same roll.</br>
+      AP cost is held until the action is completed.  The creature must be within senses range during this entire time.`
+      },
+      {
+        level: 1,
+        type: 'Exploration',
+        name: 'Creature Befriender',
+        AP: 0,
+        requirements: {
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer who has this perk finds befriending creatures to be second nature.</br>
+      When making a successful <em>animal handling</em> check to befriend a creature, they gain an additional +2 to the goal.`
+      },
+      {
+        level: 2,
+        type: 'Exploration',
+        name: 'Heightened Danger Sense',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 2,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `Creatures living in the wild have a heightened sense of danger, an ability that an adventurer can tap into.</br>
+      When making a successful <em>Animal handling</em> check, the adventurer is alerted to all creatures within the area of the outcome table`,
+        table: [
+          {
+            Score: 1,
+            Result: '10 ft'
+          },
+          {
+            Score: 2,
+            Result: '20 ft'
+          },
+          {
+            Score: 3,
+            Result: '30 ft'
+          },
+          {
+            Score: 4,
+            Result: '40 ft'
+          },
+          {
+            Score: 5,
+            Result: '50 ft'
+          },
+          {
+            Score: 6,
+            Result: '60 ft'
+          },
+          {
+            Score: 7,
+            Result: '70 ft'
+          },
+          {
+            Score: 8,
+            Result: '80 ft'
+          },
+          {
+            Score: 9,
+            Result: '90 ft'
+          },
+          {
+            Score: 10,
+            Result: '100 ft'
+          }
+        ]
+      },
+      {
+        level: 3,
+        type: 'Exploration',
+        name: 'Command: Scout',
+        AP: 20,
+        requirements: {
+          strength: 2,
+          perception: 3,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to scout ahead and look for a certain object.</br>
+      When making a successful <em>Animal handling</em> check, the creature will look for the object in the direction requested by the adventurer.</br>
+      The creature will scout as far as the outcome table states, return, and show the adventurer where it was found.</br>
+      The creature must have a way to know what it's looking for, whether this is a scent, a picture, or being told to find something it already knows about.`,
+        table: [
+          {
+            Score: 1,
+            Result: '50 feet'
+          },
+          {
+            Score: 2,
+            Result: '100 feet'
+          },
+          {
+            Score: 3,
+            Result: '150 feet'
+          },
+          {
+            Score: 4,
+            Result: '250 feet'
+          },
+          {
+            Score: 5,
+            Result: '500 feet'
+          },
+          {
+            Score: 6,
+            Result: '1,000 feet'
+          },
+          {
+            Score: 7,
+            Result: '2,500 feet'
+          },
+          {
+            Score: 8,
+            Result: '1 mile'
+          },
+          {
+            Score: 9,
+            Result: '3 miles'
+          },
+          {
+            Score: 10,
+            Result: '5 miles'
+          }
+        ]
+      },
+      {
+        level: 4,
+        type: 'Exploration',
+        name: 'Command: Stalk',
+        AP: 20,
+        requirements: {
+          strength: 2,
+          perception: 4,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to stalk a creature and report it's location.</br>
+      When making a successful <em>Animal handling</em> check, the creature will locate and follow a target for as many hours as degrees of success.`
+      },
+      {
+        level: 5,
+        type: 'Exploration',
+        name: 'Command: Interact',
+        AP: 20,
+        requirements: {
+          strength: 2,
+          perception: 5,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to interact with an object in any way the adventurer wants.</br>
+      When making a successful <em>Animal handling</em> check, the creature will follow the command sharing the result of the roll.</br>
+      This can be used to disable a trap, unlock a door, or any other action that the creature has the physical ability to do so.`
+      },
+      {
+        level: 1,
+        type: 'Interaction',
+        name: 'Cute Presence',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer who has an animal in his/her presence when making a persuasion check can use it's cuteness as an advantage.</br>
+      All <em>persuasion</em> checks made to creatures who like the animal have a +2 bonus to the goal roll.`
+      },
+      {
+        level: 2,
+        type: 'Interaction',
+        name: 'Distracting Presence',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 2,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can command a befriended creature (see glossary) to distract others while talking.</br>
+      When making a successful <em>Animal handling</em> check, all <em>Pickpocket</em> checks made against a distracted creature get a bonus equal to the degree of success.</br>
+      NOTE:  This does not work in a crowd, as the animal would bring attention to the pickpocket attempt.`
+      },
+      {
+        level: 3,
+        type: 'Interaction',
+        name: 'Send Message',
+        AP: 20,
+        requirements: {
+          strength: 2,
+          perception: 3,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can command it to delivery a written message to a location it knows already.</br>
+      When making a successful <em>Animal handling</em> check, the creature will deliver the message as many miles away as equal to the degree of success.`
+      },
+      {
+        level: 4,
+        type: 'Interaction',
+        name: 'Command: Parrot',
+        AP: 20,
+        requirements: {
+          strength: 1,
+          perception: 4,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer who has befriended a creature (see glossary) that has any speech ability can command it to listen and parrot back information later.</br>
+      When making a successful <em>Animal handling</em> check, the creature will parrot back a number of words as described in the outcome table:`,
+        table: [
+          {
+            Score: 1,
+            Result: '10 words'
+          },
+          {
+            Score: 2,
+            Result: '20 words'
+          },
+          {
+            Score: 3,
+            Result: '30 words'
+          },
+          {
+            Score: 4,
+            Result: '40 words'
+          },
+          {
+            Score: 5,
+            Result: '50 words'
+          },
+          {
+            Score: 6,
+            Result: '60 words'
+          },
+          {
+            Score: 7,
+            Result: '70 words'
+          },
+          {
+            Score: 8,
+            Result: '80 words'
+          },
+          {
+            Score: 9,
+            Result: '90 words'
+          },
+          {
+            Score: 10,
+            Result: '100 words'
+          }
+        ]
+      },
+      {
+        level: 5,
+        type: 'Interaction',
+        name: 'Speak on Behalf',
+        AP: 20,
+        requirements: {
+          strength: 2,
+          perception: 5,
+          intelligence: 2,
+          specialization: true
+        },
+        details: `An adventurer who has befriended a creature (see glossary) can instruct it to deliver a message on the adventurer's behalf.</br>
+      When making a successful <em>Animal handling</em> check, the creature will be able to convey a message with a persuasion check equal to the degree of success.`
       }
     ]
   },
