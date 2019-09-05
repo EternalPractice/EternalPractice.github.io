@@ -1439,7 +1439,7 @@ let specializationData = [
       {
         level: 2,
         type: 'Combat',
-        name: 'Stylish Combat Stance',
+        name: 'Combat Stance: Stylish',
         AP: 2,
         requirements: {
           strength: 1,
@@ -1510,7 +1510,7 @@ let specializationData = [
       {
         level: 4,
         type: 'Combat',
-        name: 'Inspiring Combat Stance',
+        name: 'Combat Stance: Inspiring',
         AP: 3,
         requirements: {
           strength: 1,
@@ -1862,7 +1862,7 @@ let specializationData = [
       {
         level: 4,
         type: 'Combat',
-        name: 'Beastly Combat Stance',
+        name: 'Combat Stance: Beastly',
         AP: 3,
         requirements: {
           strength: 3,
@@ -2162,21 +2162,191 @@ let specializationData = [
     ]
   },
   {
-    name: 'Brute Force',
-    description: `Brute Force is some stuff.`,
+    name: 'Brutality',
+    description: `Actions of brutality involve anything that uses brute force to overcome obstacles.</br>
+    From bashing in doors, bashing in someone's face, or simply threatening to do so all are examples of brutality.</br>
+    Brutality favors 2-handed melee weapons since they allow adventurers to put their full strength behind it.`,
     perks: [
       {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
+        level: 1,
+        type: 'Combat',
+        name: 'Charge',
+        AP: 3,
         requirements: {
-          strength: 1,
+          strength: 2,
           perception: 1,
           intelligence: 1,
           specialization: false
         },
-        details: `<place holder>`
+        details: `An adventurer can initiate a charge, moving at double speed as long as they move at least 4 squares.</br>
+        At the end of the charge they will gain a +2 to a melee attack goal roll.`
+      },
+      {
+        level: 2,
+        type: 'Combat',
+        name: 'Power Attack',
+        AP: 4,
+        requirements: {
+          strength: 3,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can put their full force behind a blow, trading accuracy for damage.</br>
+      Before making a <em>melee attack</em> check, the adventurer can choose to give themselves a penalty to the goal for the extra damage in the outcome table:`,
+        table: [
+          {
+            Score: 1,
+            Result: '+1 Damage'
+          },
+          {
+            Score: 2,
+            Result: '+5 Damage'
+          },
+          {
+            Score: 3,
+            Result: '+10 Damage'
+          },
+          {
+            Score: 4,
+            Result: '+15 Damage'
+          },
+          {
+            Score: 5,
+            Result: '+20 Damage'
+          },
+          {
+            Score: 6,
+            Result: 'x1.5 Damage'
+          },
+          {
+            Score: 7,
+            Result: 'x2 Damage'
+          },
+          {
+            Score: 8,
+            Result: 'x3 Damage'
+          },
+          {
+            Score: 9,
+            Result: 'x4 Damage'
+          },
+          {
+            Score: 10,
+            Result: 'x5 Damage'
+          }
+        ]
+      },
+      {
+        level: 3,
+        type: 'Combat',
+        name: 'Combat Stance: Raging',
+        AP: 3,
+        requirements: {
+          strength: 4,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can enter a rage while in combat throwing caution to the wind.</br>
+      While holding the AP needed, the adventurer will gain +4 to all combat rolls while getting -4 to all defensive stats.`
+      },
+      {
+        level: 4,
+        type: 'Combat',
+        name: 'Sunder Equipment',
+        AP: 4,
+        requirements: {
+          strength: 5,
+          perception: 1,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can choose to attack what a being is wearing/holding.</br>
+      When making a successful <em>2-handed melee attack</em> check, the adventurer will instead transfer the damage to the equipment instead of the creature.`
+      },
+      {
+        level: 5,
+        type: 'Combat',
+        name: 'Sever Limb',
+        AP: 5,
+        requirements: {
+          strength: 5,
+          perception: 1,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can sever the limb of a wounded creature.</br>
+        When making a successful <em>2-handed melee attack</em> check, the adventurer can sever a limb that's at 0 HP and transfer the remaining damage to the torso.`
+      },
+      {
+        level: 3,
+        type: 'Exploration',
+        name: 'Break Lock',
+        AP: 20,
+        requirements: {
+          strength: 4,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can attempt to break a padlock (or any other external lock).</br>
+      When making a successful <em>melee attack</em> check, the adventurer can break a lock of level equal to or lower than degree of success.`
+      },
+      {
+        level: 4,
+        type: 'Exploration',
+        name: 'Break Door',
+        AP: 20,
+        requirements: {
+          strength: 5,
+          perception: 1,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can attempt to break a door.</br>
+      When making a successful <em>melee attack</em> check, the adventurer can break a door of level equal to or lower than degree of success.`
+      },
+      {
+        level: 2,
+        type: 'Exploration',
+        name: 'Lifting Expertise',
+        AP: 0,
+        requirements: {
+          strength: 3,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer with lifting expertise is stronger than most.</br>
+      When calculating lifting & carrying capacity, the adventurer can double the amount.`
+      },
+      {
+        level: 5,
+        type: 'Exploration',
+        name: 'Break Wall',
+        AP: 20,
+        requirements: {
+          strength: 5,
+          perception: 1,
+          intelligence: 1,
+          specialization: true
+        },
+        details: `An adventurer can attempt to break a wall.</br>
+      When making a successful <em>melee attack</em> check, the adventurer can break a wall of level equal to or lower than degree of success.`
+      },
+      {
+        level: 1,
+        type: 'Exploration',
+        name: 'Climbing Expertise',
+        AP: 0,
+        requirements: {
+          strength: 2,
+          perception: 1,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer with climbing expertise is better at climbing than most and gets a +2 to all <em>athletics</em> checks towards climbing.`
       }
     ]
   },
