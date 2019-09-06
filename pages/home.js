@@ -1,8 +1,9 @@
 let pageHTML = `
-<img src="../img/Inverted Dire.png">
 
+<img class="logo-home" src="../img/Inverted Dire.png">
 <div class="content-home">
   <h1 class="title-home">DIRE-RPG</h1>
+
   <p>This is a work in progress for my upcoming RPG system.  Updates will be frequently posted on this page.</p>
   <p>The current plan is to write 3 perks each day until the specializations are complete.</p>
   </br>
@@ -20,6 +21,9 @@ let pageHTML = `
   <p><span class="date">2019/09/05</span>  -  Changed "Brute Force" to "Brutality", completed 2/3 perks.</p>
   <p><span class="date">2019/09/05</span>  -  Changed naming conventions for combat stances.</p>
   <p><span class="date">2019/09/05</span>  -  Updated favicon & added home page logo.</p>
+  <p><span class="date">2019/09/06</span>  -  Completed Brutality perks.</p>
+  <p><span class="date">2019/09/06</span>  -  Added Cavalier description & combat perks.</p>
+  <p><span class="date">2019/09/06</span>  -  Updated CSS for logo.</p>
 </div>
 `;
 
