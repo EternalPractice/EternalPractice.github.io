@@ -2727,17 +2727,74 @@ let specializationData = [
     Adventurers who study the ways of command are able to aid others in combat strategy, walk them through skills, and train people to perform tasks.`,
     perks: [
       {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
+        level: 1,
+        type: 'Combat',
+        name: 'Name Target',
+        AP: 3,
         requirements: {
           strength: 1,
           perception: 1,
           intelligence: 1,
           specialization: false
         },
-        details: `<place holder>`
+        details: `An adventurer can command his/her allies to attack a particular person, giving them focus.</br>
+        Upon making a successful <em>Persuasion</em> check, all allies that move toward the target on their turn can move an extra square per AP.`
+      },
+      {
+        level: 2,
+        type: 'Combat',
+        name: '"Watch Out!"',
+        AP: 5,
+        requirements: {
+          strength: 1,
+          perception: 2,
+          intelligence: 1,
+          specialization: false
+        },
+        details: `An adventurer can point out incoming attacks on their allies, preparing them to defend against an attack attack.</br>
+        Upon making a successful <em>Persuasion</em> check, the next attack from the named enemy gains a penalty equal to your degree of success.`
+      },
+      {
+        level: 3,
+        type: 'Combat',
+        name: 'Point Out Weakness',
+        AP: 5,
+        requirements: {
+          strength: 1,
+          perception: 3,
+          intelligence: 2,
+          specialization: false
+        },
+        details: `An adventurer can observe an opponent and point out weaknesses in their combat ability, boosting others fighting them.</br>
+        Upon making a successful <em>Persuasion</em> check, the next attack against that enemy gets a bonus equal to your degree of success.`
+      },
+      {
+        level: 4,
+        type: 'Combat',
+        name: 'Combat Stance: Watch Over Group',
+        AP: 3,
+        requirements: {
+          strength: 1,
+          perception: 4,
+          intelligence: 3,
+          specialization: true
+        },
+        details: `An adventurer is very used to watching over a group and keeping an eye on their bling spots, that they can spot ambushes and sneak attacks.</br>
+        When using this combat stance, opponents get -4 to all stealth checks.`
+      },
+      {
+        level: 5,
+        type: 'Combat',
+        name: 'Combat Stance: Intimidating Commander',
+        AP: 3,
+        requirements: {
+          strength: 1,
+          perception: 5,
+          intelligence: 3,
+          specialization: true
+        },
+        details: `An adventurer commanding a group can give off an aura that intimidates enemies of the group.</br>
+        When using this combat stance, all allies gain a +2 bonus to their AC.`
       }
     ]
   },

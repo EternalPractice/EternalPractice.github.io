@@ -26,6 +26,7 @@ let pageHTML = `
   <p><span class="date">2019/09/06</span>  -  Updated CSS for logo.</p>
   <p><span class="date">2019/09/14</span>  -  Completed Cavalier perks.</p>
   <p><span class="date">2019/09/14</span>  -  Updated Command description.</p>
+  <p><span class="date">2019/09/19</span>  -  Completed Command combat perks.</p>
 
 </div>
 `;
