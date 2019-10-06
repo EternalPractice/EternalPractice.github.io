@@ -27,6 +27,8 @@ let pageHTML = `
   <p><span class="date">2019/09/14</span>  -  Completed Cavalier perks.</p>
   <p><span class="date">2019/09/14</span>  -  Updated Command description.</p>
   <p><span class="date">2019/09/19</span>  -  Completed Command combat perks.</p>
+  <p><span class="date">2019/10/06</span>  -  Completed Command exploration perks.</p>
+  <p><span class="date">2019/10/06</span>  -  Removed Brawler specialization (will be included with martial arts).</p>
 
 </div>
 `;
