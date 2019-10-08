@@ -2944,22 +2944,22 @@ let specializationData = [
     ]
   },
   {
-    name: 'Blood Mage',
-    description: `Blood Mage is some stuff.`,
+    name: 'Blood Magic',
+    description: `Blood Magic is the practice of modifying & empowering spells through sacrificing their life force and adding it to the spell's power.</br>`,
     perks: [
       {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
+      level: 1,
+      type: 'Combat',
+      name: 'Meta Magic: ',
+      AP: ,
+      requirements: {
+      strength: ,
+      perception: ,
+      intelligence: ,
+      specialization: 
+      },
+      details: ``
+      },
     ]
   },
   {
