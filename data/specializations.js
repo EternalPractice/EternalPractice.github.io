@@ -3004,7 +3004,7 @@ let specializationData = [
     ]
   },
   {
-    name: "Occultism",
+    name: "Pact Magic",
     description: `Occultism is some stuff.`,
     perks: [
       {
@@ -3042,7 +3042,7 @@ let specializationData = [
     ]
   },
   {
-    name: "Raptor fighting",
+    name: "Parkour",
     description: `Raptor fighting is some stuff.`,
     perks: [
       {
