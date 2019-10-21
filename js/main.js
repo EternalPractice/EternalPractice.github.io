@@ -4,8 +4,7 @@ import * as attribute from '../pages/attributes.js';
 import * as race from '../pages/races.js';
 import * as skill from '../pages/skills.js';
 import * as specialization from '../pages/specializations.js';
-// import * as item from '../pages/items.js';
-import * as magic from '../pages/magic.js';
+import * as item from '../pages/items.js';
 import * as glossary from '../pages/glossary.js';
 import * as footer from '../pages/footer.js';
 
@@ -70,11 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log(`updating specializations`);
           document.getElementById('MainContent').innerHTML = specialization.selectSpecialization(e);
           break;
-        // case 'Weapons-items':
-        //   document.getElementById('MainContent').innerHTML = item.pageHTML;
-        //   break;
-        case 'Magic':
-          document.getElementById('MainContent').innerHTML = magic.renderHTML();
+        case 'Weapons-items':
+          document.getElementById('MainContent').innerHTML = item.pageHTML;
           break;
         case 'Glossary':
           document.getElementById('MainContent').innerHTML = glossary.pageHTML;
