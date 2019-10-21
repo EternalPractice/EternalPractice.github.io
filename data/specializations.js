@@ -2944,65 +2944,8 @@ let specializationData = [
     ]
   },
   {
-    name: 'Blood Magic',
-    description: `Blood Magic is the practice of modifying & empowering spells through sacrificing their life force and adding it to the spell's power.</br>`,
-    perks: [
-      {
-      level: 1,
-      type: 'Combat',
-      name: 'Meta Magic: ',
-      AP: ,
-      requirements: {
-      strength: ,
-      perception: ,
-      intelligence: ,
-      specialization: 
-      },
-      details: ``
-      },
-    ]
-  },
-  {
     name: 'Dual Wielder',
     description: `Dual Wielder is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Elements',
-    description: `Elements is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Faith',
-    description: `Faith is some stuff.`,
     perks: [
       {
         level: 0,
@@ -3060,63 +3003,6 @@ let specializationData = [
   {
     name: 'Nature',
     description: `Nature is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Pact Magic',
-    description: `Occultism is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Mysticism',
-    description: `Mysticism is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Psionics',
-    description: `Psionics is some stuff.`,
     perks: [
       {
         level: 0,
@@ -3212,25 +3098,6 @@ let specializationData = [
   {
     name: 'Skulker',
     description: `Skulker is some stuff.`,
-    perks: [
-      {
-        level: 0,
-        type: 'Exploration',
-        name: '<place holder>',
-        AP: 0,
-        requirements: {
-          strength: 1,
-          perception: 1,
-          intelligence: 1,
-          specialization: false
-        },
-        details: `<place holder>`
-      }
-    ]
-  },
-  {
-    name: 'Undeath',
-    description: `Undeath is some stuff.`,
     perks: [
       {
         level: 0,

@@ -20,9 +20,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 36px auto 36px;
   grid-template-areas:
-    "header"
-    "article"
-    "footer";
+    'header'
+    'article'
+    'footer';
 }
 
 header {
@@ -264,6 +264,61 @@ p {
 .content-items {
   grid-area: 1/1/3/3;
   place-self: center;
+}
+
+/* --------------------------------------------------------
+                MAIGC PAGE
+-------------------------------------------------------- */
+.list-of-magic-schools {
+  grid-area: 1/1/2/1;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+}
+
+.list-of-magic-schools ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-of-magic-schools li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.list-of-magic-schools li:nth-child(odd) {
+  background-color: #102533;
+}
+
+.list-of-magic-schools li:nth-child(even) {
+  background-color: #204761;
+}
+
+.list-of-magic-types {
+  grid-area: 2/1/3/1;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+}
+
+.list-of-magic-types ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-of-magic-types li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.list-of-magic-types li:nth-child(odd) {
+  background-color: #102533;
+}
+
+.list-of-magic-types li:nth-child(even) {
+  background-color: #204761;
 }
 
 /* --------------------------------------------------------
