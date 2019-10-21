@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 let pageHTML = `
 <h1 class="title-items">Weapons & Items</h1>
 `;
@@ -10,6 +11,12 @@ import * as weapons from '../data/weapons.js';
 
 let chosenWeaponType = weapons.weapons[0];
 
+=======
+import * as weapons from '../data/weapons.js';
+
+let chosenWeaponType = weapons.weapons[0];
+
+>>>>>>> parent of abb8f54... Cleared items.js for fresh rewrite
 =======
 import * as weapons from '../data/weapons.js';
 
@@ -152,6 +159,9 @@ function renderHTML(specialization) {
 
 export { selectSpecialization };
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of abb8f54... Cleared items.js for fresh rewrite
+=======
 >>>>>>> parent of abb8f54... Cleared items.js for fresh rewrite
 =======
 >>>>>>> parent of abb8f54... Cleared items.js for fresh rewrite
