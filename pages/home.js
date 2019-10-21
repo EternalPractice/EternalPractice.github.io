@@ -29,6 +29,13 @@ let pageHTML = `
   <p><span class="date">2019/09/19</span>  -  Completed Command combat perks.</p>
   <p><span class="date">2019/10/06</span>  -  Completed Command exploration perks.</p>
   <p><span class="date">2019/10/06</span>  -  Removed Brawler specialization (will be included with martial arts).</p>
+  <p><span class="date">2019/10/07</span>  -  Completed Command perks.</p>
+  <p><span class="date">2019/10/07</span>  -  Split "Occultism" into "Pact Magic" & "Mysticism".</p>
+  <p><span class="date">2019/10/07</span>  -  Changed "Raptor Fighting" into "Parkour".</p>
+  <p><span class="date">2019/10/21</span>  -  Removed all magic from specializations, made Magic tab.</p>
+  <p><span class="date">2019/10/21</span>  -  Made both "schools of magic" & "types of magic" in Magic tab.</p>
+  <p><span class="date">2019/10/21</span>  -  Started working on weapons & items tab.</p>
+  <p><span class="date">2019/10/21</span>  -  Temporarily disabled weapons & items while converting specialization.js code to work with it.</p>
 
 </div>
 `;
