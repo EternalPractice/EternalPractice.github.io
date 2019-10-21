@@ -1,5 +1,5 @@
-import * as data from '../data/weapons.js';
+let pageHTML = `
+<h1 class="title-items">Weapons & Items</h1>
+`;
 
-//TODO
-
-export { renderItems };
+export { pageHTML };
