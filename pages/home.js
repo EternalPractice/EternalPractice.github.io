@@ -36,6 +36,7 @@ let pageHTML = `
   <p><span class="date">2019/10/21</span>  -  Made both "schools of magic" & "types of magic" in Magic tab.</p>
   <p><span class="date">2019/10/21</span>  -  Started working on weapons & items tab.</p>
   <p><span class="date">2019/10/21</span>  -  Temporarily disabled weapons & items while converting specialization.js code to work with it.</p>
+  <p><span class="date">2020/1/17</span>  -  Proving a point.</p>
 
 </div>
 `;
